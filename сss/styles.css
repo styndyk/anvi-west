@@ -1,0 +1,127 @@
+
+/* Загальні стилі */
+
+
+body {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    background-color: var(--main-backgrounds-color);
+  }
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none; /* Відключає підкреслення посилань */
+  }
+
+  ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; /* Задає жирний шрифт для заголовків */
+    margin-top: 0; /* Видаляє верхній відступ заголовків */
+    margin-bottom: 1rem; /* Додає нижній відступ для заголовків */
+  }
+
+  .container {
+    max-width: 1500px; /* Задає максимальну ширину контейнера */
+    margin-left: auto; /* Автоматично вирівнює контейнер по лівому краю */
+    margin-right: auto; /* Автоматично вирівнює контейнер по правому краю */
+    padding-left: 20px; /* Задає внутрішній відступ зліва контейнера */
+    padding-right: 20px; /* Задає внутрішній відступ справа контейнера */
+  }
+
+  /* END Загалальні стилі */
+
+  /* Стилі для хедера */
+
+.header {
+    padding: 20px; /* Задає відступи всередині хедера */
+}
+
+.header .container {
+    display: flex; /* Задає блочне відображення для елементів хедера */
+    align-items: center; /* Вирівнює елементи хедера по вертикалі */
+    justify-content: space-between; /* Розташовує елементи хедера на краях */
+    min-height: 100px;
+  }
+  
+  .logo {
+    font-size: 24px; /* Задає розмір шрифту для логотипу */
+  }
+  
+  .menu {
+    display: flex; /* Задає блочне відображення для меню */
+    list-style-type: none; /* Видаляє маркування у списку меню */
+    align-items: center;
+    padding: 0;
+  }
+  
+  .menu__item {
+    margin-right: 45px; /* Задає відступ між пунктами меню */
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+  
+  .menu__item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu__item:hover::after {
+    transform: scaleX(1);
+  }
+
+  
+  .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .contact-button::after {
+    content: none;
+  }
+
+  .contact-button:hover {
+    background-color: var(--primary-color);
+  }
+
+  .contact-button:hover a {
+    color: var(--main-backgrounds-color);
+  }
+
+  .menu__item.active .menu__item__link {
+    color: var(--active-color);
+  }
+  
+
+  .menu__item__link {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+
+
+  /* END Стилі для хедера */
