@@ -14,6 +14,10 @@ body {
     text-decoration: none; /* Відключає підкреслення посилань */
   }
 
+  p {
+    color: var(--primary-color);
+  }
+
   ul, ol {
     list-style-type: none;
     padding-left: 0;
@@ -23,6 +27,7 @@ body {
     font-weight: bold; /* Задає жирний шрифт для заголовків */
     margin-top: 0; /* Видаляє верхній відступ заголовків */
     margin-bottom: 1rem; /* Додає нижній відступ для заголовків */
+    color: var(--primary-color);
   }
 
   .container {
@@ -125,3 +130,123 @@ body {
 
 
   /* END Стилі для хедера */
+
+  /* Стилі для сompany section*/
+
+  .company-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Задайте висоту за потребою */
+  }
+  
+  .company-section .container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .company-section h1 {
+    font-size: 64px; /* Задайте розмір шрифту за потребою */
+    margin-bottom: 25px; /* Задайте відступ між заголовком і описом */
+  }
+  
+  .company-section p {
+    font-size: 24px; /* Задайте розмір шрифту за потребою */
+  }
+  /* END Стилі для сompany section*/
+
+  /* Стилі для products-title */
+
+  .products-title {
+    padding: 40px 0;
+  }
+
+  .products-title .container {
+    text-align: center;
+  }
+
+  .products-title__title {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .products-title__text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  /* END Стилі для products-title */
+
+  /* Стилі для products-section */
+
+  .products-section {
+    padding: 40px 0;
+    padding-bottom: 0;
+  }
+  
+  .products-section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .products-section__block {
+    width: calc(33.33% - 20px);
+    background-color: var(--secondary-color);
+    margin-bottom: 40px;
+    transition: transform 0.3s; /**/
+  }
+
+  .products-section__block:hover {/**/
+    transform: scale(1.1);
+  }
+  
+  .products-section__content {
+    margin: 10%;
+    text-align: center;
+    
+  }
+  
+  .products-section__content__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .products-section__content__description {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: start;
+  }
+  
+  /* END Стилі для products-section */
+
+  /* Стилі для products-button */
+  .products-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+
+  .products-button__link{
+    display: inline-block;
+    padding: 15px 175px;
+    background-color: var(--main-backgrounds-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+    line-height: 20px;
+    
+  }
+  
+  .products-button__link:hover {
+    background-color: var(--primary-color);
+    color: var(--main-backgrounds-color);
+  }
+
+  /* END Стилі для products-button */
