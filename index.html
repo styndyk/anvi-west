@@ -107,11 +107,84 @@
       <a href="products.html" class="products-button__link">Всі товари</a>
     </div>
   </section>
-  
+  <section class="map">
+    <div id="map-container">
+      <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.380279386556!2d24.220269684540114!3d50.390194488834084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4724d92b8275c99b%3A0x4a3a67c7eb182f5!2sAnvi-Zakhid!5e0!3m2!1sru!2sua!4v1688563643211!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
   <!-- Додайте інші розділи та вміст вашого сайту -->
   
-  <footer>
-    <!-- Додайте футер сайту -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__item contact-info">
+        <h3 class="footer__item__title">
+          <span>Логотип</span>
+        </h3>
+        <p class="footer__item__text">
+          Компанія ТОВ «Анві-Захід» - це прекрасний вибір меблевих тканин, що доповнюється привабливими цінами і оперативністю поставки.
+        </p>
+        <div class="footer__item__info">
+          <address>
+              вулиця Бічна Промислова, 3, Червоноград, Львівська область, 80100
+          </address>
+          <ul>
+            <li>
+              <a href="tel:+380324948886">0324948886</a>
+            </li>
+            <li>
+              <a href="mailto:example@example.com">example@example.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__item contact-form">
+        <h3 class="contact-form__title footer__item__title">
+          Зв'язатися з нами
+        </h3>
+        <form action="process_form.php" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ім'я: *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="surname">Прізвище *</label>
+              <input type="text" id="surname" name="surname" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Електронна пошта *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Номер телефону</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="subject">Тема</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="contact-form__button">Надіслати</button>
+        </form>
+      </div>
+      <div class="footer__item socials">
+        <h3 class="footer__item__title">
+          Слідкуйте за нами в соціальних мережах
+        </h3>
+        <ul>
+          <li><a href="https://www.facebook.com/your-page" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/your-account" target="_blank">Instagram</a></li>
+          <li><a href="viber://chat?number=your-phone-number" target="_blank">Viber</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

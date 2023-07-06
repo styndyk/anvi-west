@@ -34,8 +34,8 @@ body {
     max-width: 1500px; /* Задає максимальну ширину контейнера */
     margin-left: auto; /* Автоматично вирівнює контейнер по лівому краю */
     margin-right: auto; /* Автоматично вирівнює контейнер по правому краю */
-    padding-left: 20px; /* Задає внутрішній відступ зліва контейнера */
-    padding-right: 20px; /* Задає внутрішній відступ справа контейнера */
+    padding-left: 10px; /* Задає внутрішній відступ зліва контейнера */
+    padding-right: 10px; /* Задає внутрішній відступ справа контейнера */
   }
 
   /* END Загалальні стилі */
@@ -226,7 +226,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 
 
@@ -250,3 +250,174 @@ body {
   }
 
   /* END Стилі для products-button */
+
+  /* Стилі для map */
+
+  .map {
+    margin-bottom: 100px;
+  }
+
+
+  /* END Стилі для map */
+
+  /* Стилі для footer */
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 5vw;
+  }
+
+  .footer__item {
+    /* width: calc(33.33% - 20px); */
+  }
+
+  .footer__item__title {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  .footer__item__text {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
+
+  .footer__item__info {
+    line-height: 2;
+  }
+
+  .footer__item__info address {
+    font-style: normal;
+  }
+
+  .footer__item__info ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    /* width: calc(50% - 15px); */
+    width: 50%;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .form-group::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid var(--primary-color);
+    transform: scaleY(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .form-group:hover::after, 
+  .form-group textarea:focus + label::after,
+  .form-group input:focus + label::after
+   {
+    transform: scaleY(2);
+  }
+  
+  .form-group label {
+    /* flex-basis: 30%; */
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    flex-basis: 70%;
+    border: none;
+    /* border-bottom: 1px solid var(--primary-color); */
+    /* min-height: 100%; */
+    padding-bottom: 5px;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    /* border-color: var(--primary-color); */
+    /* box-shadow: 0 0 2px var(--primary-color); */
+}
+
+  .form-group textarea {
+    resize: none;
+  }
+  
+
+  .form-group.full-width {
+    width: 100%;
+  }
+
+  .contact-form__button {
+    padding: 15px 30px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  .contact-form__button:hover {
+    background-color: var(--primary-color);
+    color: var(--main-backgrounds-color);
+  }
+
+
+  .socials li {
+    margin-bottom: 15px;
+    padding: 5px 0;
+    
+  }
+  
+  .socials li a {
+    position: relative;
+  }
+  .socials li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+  }
+
+  .socials li:hover a::after {
+    transform: scaleX(1);
+  }
+  
+  
+
+  /* .form-group:hover  input, .form-group:hover textarea {
+    transform: scaleY(1.05);
+    border-bottom-color: var(--primary-color);
+  } */
+  /* END Стилі для footer */
