@@ -44,6 +44,7 @@ body {
 
 .header {
     padding: 20px; /* Задає відступи всередині хедера */
+    margin-bottom: 20px;
 }
 
 .header .container {
@@ -416,8 +417,30 @@ body {
   
   
 
-  /* .form-group:hover  input, .form-group:hover textarea {
-    transform: scaleY(1.05);
-    border-bottom-color: var(--primary-color);
-  } */
-  /* END Стилі для footer */
+/* Стилі для products.html */
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  margin-bottom: 40px;
+}
+
+.titles .container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.titles__title {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.titles__text {
+  font-size: 24px;
+}
+
+/* END Стилі для products.html */
