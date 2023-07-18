@@ -274,9 +274,7 @@ body {
     gap: 5vw;
   }
 
-  .footer__item {
-    /* width: calc(33.33% - 20px); */
-  }
+
 
   .footer__item__title {
     font-size: 21px;
@@ -537,7 +535,7 @@ body {
 .goods__product__image {
   display: flex;
   justify-content: center; /* Центрування по горизонталі */
-  align-items: center; /* Центрування по вертикалі */
+  align-items: center; /* Центруван`ня по вертикалі */
   height: 200px; /* Встановіть висоту за вашими потребами */
   margin-bottom: 35px;
 }
