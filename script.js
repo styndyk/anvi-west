@@ -3,22 +3,25 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
+const multer = require('multer'); // Додано модуль multer
 
 var transport = nodemailer.createTransport({
   host: "sandbox.smtp.mailtrap.io",
   port: 2525,
   auth: {
-    user: "22b2a9bc96f6fc",
-    pass: "b5197e24e24ad4"
+    user: "b685dda0e8ad07",
+    pass: "1210364c9bd81d"
   }
 });
 
-// Налаштування парсера для отримання даних форми
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
 // Налаштування для отримання сервером файлів
 app.use(express.static('src'));
+
+// Додано middleware для обробки даних з форми (FormData)
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(multer().none()); // Додано multer для обробки FormData
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/html/index.html'));
 });
@@ -29,16 +32,21 @@ app.get('/products', (req, res) => {
 
 // Ручка для обробки відправки форми
 app.post('/send-email', (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, surname, email, phone, subject, message } = req.body;
+
+  console.log(name, surname, email, phone, subject, message); // Перевірте, чи виводяться дані на сервері
 
   // Створення об'єкта з даними листа
   const mailOptions = {
-    from: 'f6d4c21fb0-6248b0+1@inbox.mailtrap.io',
+    from: '7298d450b7-197da0@inbox.mailtrap.io',
     to: 'serhii.tyndyk@gmail.com',
     subject: 'Нове повідомлення від форми',
     text: `
       Ім'я: ${name}
+      Прізвище: ${surname}
       Електронна пошта: ${email}
+      Номер телефону: ${phone}
+      Тема: ${subject}
       Повідомлення: ${message}
     `,
   };

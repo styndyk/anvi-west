@@ -1,33 +1,33 @@
+const form = document.getElementById('form');
 
- // Код для надсилання форми за допомогою AJAX-запиту
- const form = document.getElementById('form');
- const sendButton = document.getElementById('send-button');
+form.addEventListener('submit', async (event) => {
+  event.preventDefault(); // Зупинити переадресацію на /send-email
 
- sendButton.addEventListener('click', async (event) => {
-   event.preventDefault(); // Зупинити переадресацію на /send-email
+  const formData = new FormData(form);
+  for (const pair of formData.entries()) {
+    console.log(pair[0], pair[1]);
+  }
 
-   const formData = new FormData(form);
-   const response = await fetch('/send-email', {
-     method: 'POST',
-     body: formData
-   });
+  const response = await fetch('/send-email', {
+    method: 'POST',
+    body: formData
+  });
 
-   const data = await response.json();
+  const data = await response.json();
 
-   if (data.success) {
-     Swal.fire({
-       icon: 'success',
-       title: 'Успіх!',
-       text: data.message
-     });
-     form.reset();
-   } else {
-     Swal.fire({
-       icon: 'error',
-       title: 'Помилка!',
-       text: data.message
-     });
-   }
- });
+  if (data.success) {
+    Swal.fire({
+      icon: 'success',
+      title: 'Успіх!',
+      text: data.message
+    });
+  } else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Помилка!',
+      text: data.message
+    });
+  }
 
-console.log("Hello");
+  form.reset();
+});
