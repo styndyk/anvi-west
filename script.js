@@ -26,7 +26,7 @@ app.get('/index.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/html/index.html'));
   });
 
-app.get('/products.html', (req, res) => {
+app.get('/products', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/html/products.html'));
   });
 
