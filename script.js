@@ -20,15 +20,12 @@ app.use(bodyParser.json());
 // Налаштування для отримання сервером файлів
 app.use(express.static('src'));
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src/html/index.html'));
-  });
-app.get('/index.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src/html/index.html'));
-  });
+  res.sendFile(path.join(__dirname, 'src/html/index.html'));
+});
 
 app.get('/products', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src/html/products.html'));
-  });
+  res.sendFile(path.join(__dirname, 'src/html/products.html'));
+});
 
 // Ручка для обробки відправки форми
 app.post('/send-email', (req, res) => {
@@ -50,10 +47,10 @@ app.post('/send-email', (req, res) => {
   transport.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log('Помилка при відправці листа:', error);
-      res.status(500).send('Помилка при відправці листа');
+      res.status(500).json({ success: false, message: 'Помилка при відправці листа' });
     } else {
       console.log('Лист успішно відправлено:', info.response);
-      res.status(200).send('Лист успішно відправлено');
+      res.status(200).json({ success: true, message: 'Лист успішно відправлено' });
     }
   });
 });

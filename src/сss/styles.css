@@ -386,6 +386,10 @@ body {
     color: var(--main-backgrounds-color);
   }
 
+  .hidden {
+    display: none;
+  }
+
 
   .socials li {
     margin-bottom: 15px;
