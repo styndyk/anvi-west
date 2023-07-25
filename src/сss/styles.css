@@ -11,11 +11,17 @@ body {
 
   a {
     color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
     text-decoration: none; /* Відключає підкреслення посилань */
   }
 
   p {
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
+  }
+
+  input,  button {
+    font-family: 'Roboto', sans-serif;
   }
 
   ul, ol {
@@ -24,6 +30,7 @@ body {
   }
 
   h1, h2, h3, h4, h5, h6 {
+    font-family: 'RobotoSlab-Bold', serif;
     font-weight: bold; /* Задає жирний шрифт для заголовків */
     margin-top: 0; /* Видаляє верхній відступ заголовків */
     margin-bottom: 1rem; /* Додає нижній відступ для заголовків */
@@ -300,7 +307,8 @@ body {
   }
 
   .footer__item__info address {
-    font-style: normal;
+    font-style: italic;
+    font-family: 'Roboto-italic';
   }
 
   .footer__item__info ul {
