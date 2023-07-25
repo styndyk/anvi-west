@@ -20,7 +20,7 @@ body {
     color: var(--primary-color);
   }
 
-  input,  button {
+  label, input,  button {
     font-family: 'Roboto', sans-serif;
   }
 
@@ -508,16 +508,30 @@ body {
 }
 
 .goods__products__filters__list__item {
-  position: relative;
+
 }
 
-.goods__products__filters__list__item a {
-  font-size: 22px;
+.goods__products__filters__list__item label {
+  font-size: 18px;
   color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+
+.goods__products__filters__list__item__text {
   position: relative;
 }
 
-.goods__products__filters__list__item a::after {
+
+.goods__products__filters__list__item input {
+  cursor: pointer;
+}
+
+.goods__products__filters__list__item__text::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -530,8 +544,9 @@ body {
   transition: transform 0.3s ease;
 }
 
-.goods__products__filters__list__item a:hover::after {
+.goods__products__filters__list__item label:hover .goods__products__filters__list__item__text:after {
   transform: scaleX(1);
+  cursor: pointer;
 }
 
 
