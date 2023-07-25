@@ -14,21 +14,25 @@ var transport = nodemailer.createTransport({
   }
 });
 
+
 // Налаштування для отримання сервером файлів
 app.use(express.static('src'));
 
-// Додано middleware для обробки даних з форми (FormData)
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(multer().none()); // Додано multer для обробки FormData
 
+// Налаштування сторінок 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/html/index.html'));
 });
 
 app.get('/products', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/html/products.html'));
-});
+}); 
+
+
+// Додано middleware для обробки даних з форми (FormData)
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(multer().none()); // Додано multer для обробки FormData
 
 // Ручка для обробки відправки форми
 app.post('/send-email', (req, res) => {
