@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 100,
+      "category": "foamRubber",
+      "image": "./images/porolon.jpg",
+      "properties": {
+        "color": "red",
+        "size": "medium"
+      },
+      "description": "This is product 1"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 200,
+      "category": "felts",
+      "image": "product2.jpg",
+      "properties": {
+        "color": "black",
+        "size": "small"
+      },
+      "description": "This is product 2"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 150,
+      "category": "springs",
+      "image": "product3.jpg",
+      "properties": {
+        "color": "blue",
+        "size": "large"
+      },
+      "description": "This is product 3"
+    },
+    {
+        "id": 4,
+        "name": "Product 4",
+        "price": 150,
+        "category": "fabrics",
+        "image": "product4.jpg",
+        "properties": {
+          "color": "blue",
+          "size": "large"
+        },
+        "description": "This is product 3"  
+    }
+  ]
+  
