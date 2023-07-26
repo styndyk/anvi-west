@@ -1,0 +1,125 @@
+[
+    {
+      "id": 1,
+      "name": "Поролон ST25-40",
+      "price": 100,
+      "category": "foamRubber",
+      "image": "./images/porolon.jpg",
+      "properties": {
+        "size": "2*1.6х2,3,4,6,8"
+      },
+      "description": "This is product 1"
+    },
+    {
+      "id": 2,
+      "name": "Поролон ST25-40",
+      "price": 100,
+      "category": "foamRubber",
+      "image": "./images/porolon.jpg",
+      "properties": {
+        "size": "2x1.6x1",
+        "amount": "25 листів"
+      },
+      "description": "This is product 2"
+    },
+    {
+      "id": 3,
+      "name": "Скоба Bizon 10",
+      "price": 150,
+      "category": "staples",
+      "image": "product3.jpg",
+      "properties": {
+        "amount": "Ящик"
+      },
+      "description": "This is product 3"
+    },
+    {
+        "id": 4,
+        "name": "Скоба Bizon 14",
+        "price": 150,
+        "category": "staples",
+        "image": "product4.jpg",
+        "properties": {
+          "amount": "Ящик"
+        },
+        "description": "This is product 3"  
+    },
+    {
+      "id": 5,
+      "name": "Скоба Bizon 16",
+      "price": 150,
+      "category": "staples",
+      "image": "product4.jpg",
+      "properties": {
+        "amount": "Ящик"
+      },
+      "description": "This is product 3"  
+    },
+    {
+      "id": 6,
+      "name": "Скоба Bizon 38",
+      "price": 150,
+      "category": "staples",
+      "image": "product4.jpg",
+      "properties": {
+        "amount": "Ящик"
+      },
+      "description": "This is product 3"  
+    },
+    {
+      "id": 7,
+      "name": "Скоба Bizon 50",
+      "price": 150,
+      "category": "staples",
+      "image": "product4.jpg",
+      "properties": {
+        "amount": "Ящик"
+      },
+      "description": "This is product 3"  
+    },
+    {
+      "id": 8,
+      "name": "Клей",
+      "price": 150,
+      "category": "glues",
+      "image": "product4.jpg",
+      "properties": {
+        "weight": "20 кг"
+      },
+      "description": "This is product 3"  
+    },
+    {
+      "id": 9,
+      "name": "Домішувач",
+      "price": 150,
+      "category": "glues",
+      "image": "product4.jpg",
+      "properties": {
+        "weight": "20 кг"
+      },
+      "description": "This is product 3"  
+    },
+    {
+      "id": 10,
+      "name": "Поролон мелений",
+      "price": 150,
+      "category": "foamRubber",
+      "image": "product4.jpg",
+      "properties": {
+        
+      },
+      "description": "This is product 3"  
+    },
+    {
+      "id": 11,
+      "name": "Войлок 500",
+      "price": 150,
+      "category": "felts",
+      "image": "product4.jpg",
+      "properties": {
+        
+      },
+      "description": "This is product 3"  
+    }
+  ]
+  

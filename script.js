@@ -16,8 +16,13 @@ var transport = nodemailer.createTransport({
 
 
 // Налаштування для отримання сервером файлів
-app.use(express.static('src'));
+app.use(express.static('./data'));
+app.use(express.static('./src'));
 
+
+app.get('/data/products.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'data/products.json'));
+});
 
 // Налаштування сторінок 
 app.get('/', (req, res) => {
