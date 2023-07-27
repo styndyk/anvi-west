@@ -45,13 +45,11 @@
     <section class="goods">
         <div class="container">
             <div class="goods__search">
-                <input type="text" class="goods__search__input" placeholder="Введіть пошуковий запит" id="searchInput" list="suggestions">
-                <datalist id="suggestions">
-                    <option value="Товар 1">
-                    <option value="Товар 2">
-                    <option value="Товар 3">
-                    <!-- Додайте більше варіантів товарів за потреби -->
-                </datalist>
+                <input type="search" class="goods__search__input" placeholder="Введіть пошуковий запит" id="searchInput">
+                <div class="suggestions__container">
+                  <div class="suggestions" id="suggestionsList"></div>
+                </div>
+                
             </div>
 
             <div class="goods__products">
@@ -88,70 +86,7 @@
             </div>
             
 
-                <div class="goods__products__list">
-                  
-                    <!-- <div class="goods__product">
-                        <div class="goods__product__image">
-                            <img src="../images/porolon.jpg" alt="#foamRubber">
-                        </div>
-                        <h3 class="goods__product__title">
-                            Поролон 10 мм 2000 * 1200 мм
-                        </h3>
-                        <p class="goods__product__details">
-                        23.45  - (23 кг/м3, 45 кПА)
-                        </p>
-                        <p class="goods__product__price">
-                        145 ₴ / аркуш
-                        </p>
-                    </div>
-                    
-                    <div class="goods__product">
-                        <div class="goods__product__image">
-                            <img src="../images/porolon.jpg" alt="#foamRubber">
-                        </div>
-                        <h3 class="goods__product__title">
-                            Поролон 20 мм 2000 * 1600 мм
-                        </h3>
-                        <p class="goods__product__details">
-                            23.45  - (23 кг/м3, 45 кПА)
-                        </p>
-                        <p class="goods__product__price">
-                            165 ₴ / аркуш
-                        </p>
-                    </div>
-
-                    <div class="goods__product">
-                        <div class="goods__product__image">
-                            <img src="../images/porolon.jpg" alt="#foamRubber">
-                        </div>
-                        <h3 class="goods__product__title">
-                            Поролон 10 мм 2000 * 1600 мм
-                        </h3>
-                        <p class="goods__product__details">
-                            23.45  - (23 кг/м3, 45 кПА)
-                        </p>
-                        <p class="goods__product__price">
-                            150 ₴ / аркуш
-                        </p>
-                    </div> -->
-
-                    <!-- <div class="goods__product">
-                        <div class="goods__product__image">
-                            <img src="../images/porolon.jpg" alt="#foamRubber">
-                        </div>
-                        <h3 class="goods__product__title">
-                            Поролон 10 мм 2000 * 1600 мм
-                        </h3>
-                        <p class="goods__product__details">
-                            23.45  - (23 кг/м3, 45 кПА)
-                        </p>
-                        <p class="goods__product__price">
-                            150 ₴ / аркуш
-                        </p>
-                    </div> -->
-                    
-                    <!-- Додайте більше товарів за потреби -->
-                  </div>
+                <div class="goods__products__list" id="productsList"></div>
             </div>
         </div>
     </section>

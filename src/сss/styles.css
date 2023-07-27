@@ -475,17 +475,72 @@ body {
 .goods__search {
   display: flex;
   justify-content: center;
+  align-items: center; /* Додаємо вирівнювання по вертикалі */
+  flex-direction: column;
   padding: 35px 0;
+  position: relative;
 }
 
 .goods__search__input {
   width: 70%;
   text-align: left;
   padding: 10px;
+  box-sizing: border-box; /* Запобігає зміні розміру інпута при виборі з підказки */
+  margin-bottom: 20px;
 }
+
 
 #searchInput {
   border: 1px solid var(--primary-color);
+}
+
+
+
+/* Стилізація підказки для інпуту з пошуком */
+
+.suggestions__container {
+  position: relative;
+  width: 70%; /* Задайте бажану ширину контейнера .suggestions */
+  margin-top: 30px; /* Встановіть бажаний відступ від інпуту внизу */
+}
+
+.suggestions {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий контейнер */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* Тінь для контейнера */
+  border-radius: 5px; /* Закруглені кути контейнера */
+  padding: 5px 10px; /* Відступи всередині контейнера */
+  top: -45px; /* Відступ від інпута */
+  left: 0;
+  opacity: 0;
+  pointer-events: none; /* Забороняємо взаємодію з невидимим блоком */
+  transition: opacity 0.2s ease;
+}
+
+.suggestions.active {
+  display: flex; /* Змінюємо display на flex, щоб використовувати Flexbox */
+  flex-direction: column; /* Дозволяємо підказці переносити елементи на наступний рядок, якщо не вистачає місця */
+  justify-content: center; /* Вирівнюємо елементи підказки по лівому краю */
+  align-items: flex-start; /* Вирівнюємо елементи по вертикалі по центру */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.suggestions option {
+  display: block;
+}
+
+.suggestion {
+  cursor: pointer; /* Змінює вигляд курсору при наведенні на елемент підказки */
+  padding: 10px 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.suggestion:hover {
+  background-color: blue;
 }
 
 .goods__products {
@@ -507,9 +562,6 @@ body {
   gap: 15px;
 }
 
-.goods__products__filters__list__item {
-
-}
 
 .goods__products__filters__list__item label {
   font-size: 18px;
