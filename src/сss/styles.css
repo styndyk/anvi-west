@@ -49,9 +49,16 @@ body {
 
   /* Стилі для хедера */
 
+.header-section {
+  min-height: 100vh;
+  background-image: url(../images/headerBg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+  
 .header {
     padding: 20px; /* Задає відступи всередині хедера */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .header .container {
@@ -152,7 +159,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh; /* Задайте висоту за потребою */
+    min-height: 30vh; /* Задайте висоту за потребою */
   }
   
   .company-section .container {
