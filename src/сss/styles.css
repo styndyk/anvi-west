@@ -236,9 +236,63 @@ body {
 
   .products-section__block {
     width: calc(33.33% - 20px);
+    min-height: 350px;
     background-color: var(--secondary-color);
     margin-bottom: 40px;
     transition: transform 0.3s; /**/
+  }
+
+  #products__foamRubber {
+    background-image: url(../images/products/foamRubber2.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+    /* background-position-x: center ;
+    background-position-y: bottom ; */
+    background-size: cover;
+  }
+
+  #products__nonWovenMaterials {
+    background-image: url(../images/products/nonWovenMaterials.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -240px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+  }
+
+  #products__springBlock {
+    background-image: url(../images/products/springBlock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+  }
+
+  #products__siliconeBall {
+    background-image: url(../images/products/siliconeBall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+  }
+
+  #products__foamFiller {
+    background-image: url(../images/products/foamFiller.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+  }
+
+  #products__glues {
+    background-image: url(../images/products/glues.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+    background-position-y: bottom ;
+    background-position-x: center;
   }
 
   .products-section__block:hover {/**/
@@ -246,7 +300,7 @@ body {
   }
   
   .products-section__content {
-    margin: 10%;
+    margin: 5%;
     text-align: center;
     
   }
