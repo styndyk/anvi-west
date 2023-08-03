@@ -96,22 +96,77 @@ fetch('./data/products.json')
       }
     }
 
-    // Обробник подій для зміни стану фільтрів
-    const filterInputs = document.querySelectorAll('input[name="filter"]');
-    filterInputs.forEach(input => {
-      input.addEventListener('change', () => {
-        const isChecked = input.checked;
-        const filterValue = input.value;
-        if (isChecked) {
-          // Додавання вибраної категорії до списку
-          selectedCategories.push(filterValue);
-        } else {
-          // Видалення вибраної категорії зі списку
-          selectedCategories = selectedCategories.filter(category => category !== filterValue);
-        }
-        filterProducts(); // Перефільтруємо товари при зміні стану фільтра
-      });
-    });
+// Отримуємо всі input type="checkbox" для фільтрів
+const filterInputs = document.querySelectorAll('input[name="filter"]');
+
+// Обробник подій для зміни стану фільтрів
+function handleFilterChange(event) {
+  const isChecked = event.target.checked;
+  const filterValue = event.target.value;
+
+  if (isChecked) {
+    // Додавання вибраної категорії до списку
+    selectedCategories.push(filterValue);
+  } else {
+    // Видалення вибраної категорії зі списку
+    selectedCategories = selectedCategories.filter(category => category !== filterValue);
+  }
+  filterProducts(); // Перефільтруємо товари при зміні стану фільтра
+}
+
+// Додаємо обробник подій для кожного input type="checkbox" фільтра
+filterInputs.forEach(input => {
+  input.addEventListener('change', handleFilterChange);
+});
+
+    // Функція для очищення підказок та приховування їх контейнера
+function clearSuggestions() {
+  suggestionsList.innerHTML = '';
+  suggestionsList.classList.remove('active');
+}
+
+// Функція для обробки вибору підказки
+function selectSuggestion(suggestionText) {
+  searchInput.value = suggestionText;
+  clearSuggestions();
+  filterProducts();
+}
+
+// Обробник події для кліку ззовні інпута пошуку
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.goods__search__input')) {
+    clearSuggestions();
+  }
+});
+
+// Обробник події для вибору підказки
+suggestionsList.addEventListener('click', (event) => {
+  if (event.target.classList.contains('suggestion')) {
+    selectSuggestion(event.target.textContent);
+  }
+});
+
+// Обробник події для вибору підказки клавішами зі стрілками
+searchInput.addEventListener('keydown', (event) => {
+  const suggestions = suggestionsList.querySelectorAll('.suggestion');
+  const currentSuggestion = suggestionsList.querySelector('.suggestion.active');
+
+  if (event.key === 'ArrowUp' && currentSuggestion) {
+    const prevSuggestion = currentSuggestion.previousElementSibling;
+    if (prevSuggestion) {
+      currentSuggestion.classList.remove('active');
+      prevSuggestion.classList.add('active');
+    }
+  } else if (event.key === 'ArrowDown' && currentSuggestion) {
+    const nextSuggestion = currentSuggestion.nextElementSibling;
+    if (nextSuggestion) {
+      currentSuggestion.classList.remove('active');
+      nextSuggestion.classList.add('active');
+    }
+  } else if (event.key === 'Enter' && currentSuggestion) {
+    selectSuggestion(currentSuggestion.textContent);
+  }
+});
 
     // Фільтруємо товари при завантаженні сторінки за станом фільтрів
     filterProducts();
