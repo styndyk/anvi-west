@@ -1,102 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Товари</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Анві-Захід</title>
     <link rel="stylesheet" href="../сss/fonts.css">
     <link rel="stylesheet" href="../сss/colors.css">
     <link rel="stylesheet" href="../сss/styles.css">
-    
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-          <div class="logo">
-            <a href="/" class="header__logo__link">
-              <img class="header__logo__link__img" src="../images/logo ANVI.jpg" alt="Логотип">
-            </a>
+    <section class="header-section">
+        <header class="header">
+          <div class="container">
+            <div class="logo">
+              <a href="/" class="header__logo__link">
+                <img class="header__logo__link__img" src="../images/logo ANVI.jpg" alt="Логотип">
+              </a>
+            </div>
+            <nav>
+              <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__item__link" id="home" href="/">Головна сторінка</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__item__link" id="aboutUs" href="/aboutUs">Про нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__item__link" id="products" href="/products">Товари</a>
+                  </li>
+                  <li class="menu__item contact-button">
+                    <a class="menu__item__link" href="#contacts">Контакти</a>
+                  </li>
+              </ul>
+            </nav>
           </div>
-          <nav>
-            <ul class="menu">
-              <li class="menu__item">
-                <a class="menu__item__link" id="home" href="/">Головна сторінка</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item__link" id="aboutUs" href="/aboutUs">Про нас</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item__link" id="products" href="/products">Товари</a>
-              </li>
-              <li class="menu__item contact-button">
-                <a class="menu__item__link" href="#contacts">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-    </header>
-
-    <section class="titles">
-        <div class="container">
-            <h1 class="titles__title">
-                Товари
-            </h1>
-            <p class="titles__text">
-                Представлені всі види товарів
+        </header>
+      
+        <div class="company-section">
+          <div class="container">
+            <h1>Анві-Захід</h1>
+            <p>
+              Ласкаво просимо до гуртівні "Анві-Захід" – вашого надійного партнера в області меблевої фурнітури та комплектуючих до меблів
             </p>
+          </div>
         </div>
+    
     </section>
 
-    <section class="goods">
-        <div class="container">
-            <div class="goods__search">
-                <input type="search" class="goods__search__input" placeholder="Введіть пошуковий запит" id="searchInput">
-                <div class="suggestions__container">
-                  <div class="suggestions" id="suggestionsList"></div>
-                </div>
-                
-            </div>
+    <section class="aboutUsContent">
 
-            <div class="goods__products">
-              <div class="goods__products__filters">
-                <ul class="goods__products__filters__list"> 
-                    <li class="goods__products__filters__list__item">
-                        <label>
-                            <span class="goods__products__filters__list__item__text">Поролон</span>
-                            <input type="checkbox" name="filter" value="foamRubber">
-                        </label>
-                    </li>
-                    <li class="goods__products__filters__list__item">
-                        <label>
-                            
-                            <span class="goods__products__filters__list__item__text">Войлоки</span>
-                            <input type="checkbox" name="filter" value="felts">
-                        </label>
-                    </li>
-                    <li class="goods__products__filters__list__item">
-                        <label>
-                            
-                            <span class="goods__products__filters__list__item__text">Пружини</span>
-                            <input type="checkbox" name="filter" value="springs">
-                        </label>
-                    </li>
-                    <li class="goods__products__filters__list__item">
-                        <label>
-                            
-                            <span class="goods__products__filters__list__item__text">Тканини</span>
-                            <input type="checkbox" name="filter" value="fabrics">
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            
-
-                <div class="goods__products__list" id="productsList"></div>
-            </div>
-        </div>
     </section>
-
-
-
-
 
     <footer class="footer" id="contacts">
         <div class="container">
@@ -180,6 +133,7 @@
           </div>
         </div>
     </footer>
+
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 </body>

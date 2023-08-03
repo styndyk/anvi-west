@@ -31,7 +31,11 @@ app.get('/', (req, res) => {
 
 app.get('/products', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/html/products.html'));
-}); 
+});
+
+app.get('/aboutUs', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src/html/aboutUs.html'));
+});
 
 
 // Додано middleware для обробки даних з форми (FormData)
