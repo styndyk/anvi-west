@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 const multer = require('multer'); // Додано модуль multer
+const fs = require('fs'); 
 
 var transport = nodemailer.createTransport({
   host: "sandbox.smtp.mailtrap.io",
@@ -31,6 +32,26 @@ app.get('/', (req, res) => {
 
 app.get('/products', (req, res) => {
   res.sendFile(path.join(__dirname, 'src/html/products.html'));
+});
+
+app.get('/products', (req, res) => {
+  const itemId = req.query.item; // Отримуємо параметр "item" з запиту
+
+  fs.readFile('./data/products.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Помилка при завантаженні товарів:', err);
+      return res.status(500).send('Помилка при завантаженні товарів');
+    }
+
+    try {
+      const products = JSON.parse(data); // Парсимо дані у форматі JSON
+      const filteredProducts = products.filter(product => product.category === itemId); // Фільтруємо товари за параметром "item"
+      res.send(filteredProducts); // Відправляємо відфільтровані товари клієнту
+    } catch (error) {
+      console.error('Помилка при обробці даних:', error);
+      res.status(500).send('Помилка при обробці даних');
+    }
+  });
 });
 
 app.get('/aboutUs', (req, res) => {
