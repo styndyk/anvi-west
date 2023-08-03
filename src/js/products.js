@@ -2,6 +2,7 @@
 const searchInput = document.getElementById('searchInput');
 const suggestionsList = document.getElementById('suggestionsList');
 let products = []; // Масив для зберігання всіх товарів
+let selectedCategories = []; // Масив для зберігання вибраних категорій
 
 // Функція для відображення товарів на сторінці
 function showProducts(productsToShow) {
@@ -34,19 +35,12 @@ function showProducts(productsToShow) {
 // Функція для фільтрації товарів за обраними категоріями та пошуковим запитом
 function filterProducts() {
   const searchText = searchInput.value.trim().toLowerCase();
-  const selectedFilters = document.querySelectorAll('input[name="filter"]:checked');
+  const filteredProductsBySearch = products.filter(product => product.name.toLowerCase().includes(searchText));
+  let filteredProducts = filteredProductsBySearch; // Початково, вибираємо всі товари, які відповідають пошуковому запиту
 
-  let filteredProducts = products; // Копія всіх товарів
-
-  if (searchText !== '') {
-    // Фільтрація за пошуковим запитом
-    filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchText));
-  }
-
-  if (selectedFilters.length > 0) {
-    // Фільтрація за обраними категоріями
-    const selectedCategories = Array.from(selectedFilters).map(filter => filter.value);
-    filteredProducts = filteredProducts.filter(product => selectedCategories.includes(product.category));
+  if (selectedCategories.length > 0) {
+    // Фільтрація за обраними категоріями, якщо є вибрані категорії
+    filteredProducts = filteredProductsBySearch.filter(product => selectedCategories.includes(product.category));
   }
 
   showProducts(filteredProducts); // Відображення відфільтрованих товарів
@@ -82,39 +76,10 @@ fetch('./data/products.json')
       }
     };
 
-    // Обробник події для вводу тексту
+    // Обробник подій для вводу тексту
     searchInput.addEventListener('input', () => {
       showSuggestions(); // Показуємо підказки залежно від введеного тексту
       filterProducts(); // Фільтруємо товари за пошуковим запитом
-    });
-
-    // Обробник події для вибору підказки
-    suggestionsList.addEventListener('click', (event) => {
-      if (event.target.classList.contains('suggestion')) {
-        searchInput.value = event.target.textContent;
-        suggestionsList.classList.remove('active'); // Приховуємо підказки після деякої затримки
-        setTimeout(() => {
-          suggestionsList.classList.remove('active');
-        }, 200); // Затримка у мілісекундах (200 мс)
-      }
-    });
-
-    // Обробник події для втрати фокусу від інпута
-    searchInput.addEventListener('blur', () => {
-      setTimeout(() => {
-        suggestionsList.classList.remove('active'); // Приховуємо підказки після деякої затримки
-      }, 200); // Затримка у мілісекундах (200 мс)
-    });
-
-    // Обробник події для зміни стану фільтрів
-    const filterInputs = document.querySelectorAll('input[name="filter"]');
-    filterInputs.forEach(input => input.addEventListener('change', filterProducts));
-
-    // Обробник події для натискання на документ, який приховує підказки при кліці за межами пошукового інпуту
-    document.addEventListener('click', (event) => {
-      if (event.target !== searchInput) {
-        suggestionsList.innerHTML = ''; // Приховуємо підказки, якщо користувач клікнув за межами інпуту
-      }
     });
 
     // Отримуємо параметр "item" з URL на стороні клієнта
@@ -123,8 +88,32 @@ fetch('./data/products.json')
 
     if (itemId) {
       // Якщо є параметр "item" у URL, фільтруємо товари за категорією
-      const filteredProductsByItem = products.filter(product => product.category === itemId);
-      showProducts(filteredProductsByItem); // Відображаємо відфільтровані товари
+      selectedCategories.push(itemId);
+      // Встановлення відповідного чекбоксу увімкненим
+      const checkbox = document.querySelector(`input[name="filter"][value="${itemId}"]`);
+      if (checkbox) {
+        checkbox.checked = true;
+      }
     }
+
+    // Обробник подій для зміни стану фільтрів
+    const filterInputs = document.querySelectorAll('input[name="filter"]');
+    filterInputs.forEach(input => {
+      input.addEventListener('change', () => {
+        const isChecked = input.checked;
+        const filterValue = input.value;
+        if (isChecked) {
+          // Додавання вибраної категорії до списку
+          selectedCategories.push(filterValue);
+        } else {
+          // Видалення вибраної категорії зі списку
+          selectedCategories = selectedCategories.filter(category => category !== filterValue);
+        }
+        filterProducts(); // Перефільтруємо товари при зміні стану фільтра
+      });
+    });
+
+    // Фільтруємо товари при завантаженні сторінки за станом фільтрів
+    filterProducts();
   })
   .catch(error => console.error('Помилка при завантаженні товарів:', error));
