@@ -54,9 +54,11 @@ body {
   background-image: url(../images/headerBg.jpg);
   background-size: cover;
   background-position: center;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
   
+
+
 .header {
     padding: 20px; /* Задає відступи всередині хедера */
     margin-bottom: 15px;
@@ -742,3 +744,33 @@ body {
 /*  Стилі для goods */
 
 /* END Стилі для products.html */
+
+
+/* AnoutUS */
+
+.header-section.aboutUs {
+  background-image: none;
+}
+
+
+.header-section__content .container {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+
+.header-section__content__title {
+  text-align: center;
+  font-size: 45px;
+}
+
+.header-section__content__description {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+/* END AnoutUS */
