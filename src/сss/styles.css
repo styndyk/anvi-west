@@ -777,6 +777,226 @@ body {
 
 /* Avaptive */
 
+/* Стилі для laptop екранів комп'ютерів */
+
+@media screen and  (min-width: 1024px) and (max-width: 1439px) {
+  .header {
+    margin-bottom: 35px;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .header__logo__link__img {
+    width: 240px;
+  }
+
+  .menu {
+    gap: 22px;
+  }
+
+  .menu__item__link {
+    font-size: 14px;
+  }
+
+  .company-section .container {
+    max-width: 620px;
+  }
+
+  .company-section h1 {
+    font-size: 48px;
+  }
+
+  .company-section p {
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+
+  .company-section__more {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .products-title {
+    padding: 30px 0;
+  }
+
+  .products-title__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .products-title__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .products-section__block {
+    min-height: 270px;
+    margin-bottom: 30px;
+  }
+
+  .products-section__content__title {
+    font-size: 22px;
+  }
+
+  #products__nonWovenMaterials {
+    background-size: 320px;
+    background-position-y: -157px;
+  }
+
+  #products__glues {
+    background-size: 65%;
+  }
+
+  .products-button {
+    margin-bottom: 75px;
+  }
+
+  .products-button__link {
+    padding: 10px 150px;
+
+  }
+
+  #map-frame {
+    height: 400px;
+  }
+
+  .footer__item__info {
+    font-size: 14px;
+  }
+
+  .footer__item__title {
+    font-size: 18px;
+  }
+
+  .footer__item {
+    max-width: calc(33% - 5px);
+}
+
+  .contact-info {
+    max-width: 25%;
+  }
+
+  .contact-form {
+    max-width: 40%;
+  }
+
+  .contact-form form {
+    font-size: 14px;
+  }
+
+  .socials li a {
+    font-size: 14px;
+  }
+
+}
+
+/* Стилі для laptop L екранів комп'ютерів */
+
+@media screen and (min-width: 1440px) and (max-width: 1700px) {
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .logo {
+    margin-left: 65px;
+  }
+
+  .header__logo__link__img {
+    width: 260px;
+  }
+
+  .menu {
+    gap: 30px;
+  }
+
+  .menu__item__link {
+    font-size: 16px;
+  }
+
+  .company-section .container {
+    max-width: 650px;
+  }
+
+  .company-section h1 {
+    font-size: 56px;
+  }
+
+  .company-section p {
+    font-size: 18px;
+    margin-bottom: 75px;
+  }
+
+  .company-section__more {
+    font-size: 16px;
+    padding: 10px 35px;
+  }
+
+
+  .products-title__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .products-title__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .products-section__block {
+    min-height: 300px;
+    margin-bottom: 35px;
+  }
+
+  .products-section__content__title {
+    font-size: 24px;
+  }
+
+  #products__nonWovenMaterials {
+    background-position-y: -190px;
+  }
+
+  #products__glues {
+    background-size: 55%;
+  }
+
+  .products-button {
+    margin-bottom: 90px;
+  }
+
+  .products-button__link {
+    padding: 10px 150px;
+
+  }
+
+
+  .footer__item__info {
+    font-size: 16px;
+  }
+
+  .footer__item__title {
+    font-size: 20px;
+  }
+
+  .contact-form form {
+    font-size: 14px;
+  }
+
+  .socials li a {
+    font-size: 14px;
+  }
+}
+
 /* Стилі для 4k екранів комп'ютерів */
 
 @media (min-width: 2560px) {
@@ -906,106 +1126,6 @@ body {
   }
 }
 
-/* Стилі для laptop L екранів комп'ютерів */
 
-@media (min-width: 1440px) {
-  .header {
-    margin-bottom: 10px;
-  }
-
-  .container {
-    max-width: 1200px;
-  }
-
-  .logo {
-    margin-left: 65px;
-  }
-
-  .header__logo__link__img {
-    width: 260px;
-  }
-
-  .menu {
-    gap: 30px;
-  }
-
-  .menu__item__link {
-    font-size: 16px;
-  }
-
-  .company-section .container {
-    max-width: 650px;
-  }
-
-  .company-section h1 {
-    font-size: 56px;
-  }
-
-  .company-section p {
-    font-size: 18px;
-    margin-bottom: 75px;
-  }
-
-  .company-section__more {
-    font-size: 16px;
-    padding: 10px 35px;
-  }
-
-
-  .products-title__title {
-    font-size: 40px;
-    line-height: 44px;
-  }
-
-  .products-title__text {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .products-section__block {
-    min-height: 300px;
-    margin-bottom: 35px;
-  }
-
-  .products-section__content__title {
-    font-size: 24px;
-  }
-
-  #products__nonWovenMaterials {
-    background-position-y: -190px;
-  }
-
-  #products__glues {
-    background-size: 55%;
-  }
-
-  .products-button {
-    margin-bottom: 90px;
-  }
-
-  .products-button__link {
-    padding: 10px 150px;
-
-  }
-
-
-  .footer__item__info {
-    font-size: 16px;
-  }
-
-  .footer__item__title {
-    font-size: 20px;
-  }
-
-  .contact-form form {
-    font-size: 14px;
-  }
-
-  .socials li a {
-    font-size: 14px;
-  }
-
-
-}
 
 /*End Adaptive */
