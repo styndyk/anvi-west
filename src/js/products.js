@@ -22,9 +22,7 @@ function showProducts(productsToShow) {
       <h3 class="goods__product__title">
         ${product.name}
       </h3>
-      <p class="goods__product__price">
-        ${product.price} грн
-      </p>
+      
     `;
 
     // Додавання блоку товару до контейнера

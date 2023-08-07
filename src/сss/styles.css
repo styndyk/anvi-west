@@ -707,7 +707,9 @@ body {
   text-align: left;
   background-color: var(--main-backgrounds-color);
   padding: 20px 15px;
-  /* text-align: center; */
+  text-align: center;
+  width: 70%;
+  border-radius: 5px;
 }
 
 .goods__product__image {
@@ -776,6 +778,69 @@ body {
 
 
 /* Avaptive */
+
+@media screen and  (min-width: 768px) and (max-width: 1023px) {
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    position: relative;
+    background-image: none;
+  }
+  
+  /* Псевдоелемент, що створює прозорий фоновий шар над основним зображенням */
+  .header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/headerBg.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
+    z-index: -1;
+  }
+
+
+  .container {
+    max-width: 900px;
+    }
+
+  .logo {
+    margin-left: 0;
+    }
+
+  .header__logo__link__img {
+    width: 240px;
+    }
+
+  .menu {
+    gap: 22px;
+    }
+    
+  .menu__item__link {
+    font-size: 14px;
+    }
+
+  .company-section .container {
+    max-width: 620px;
+  }
+
+  .company-section h1 {
+    font-size: 48px;
+  }
+
+  .company-section p {
+    font-size: 16px;
+    margin-bottom: 80px;
+  }
+  
+
+
+}
 
 /* Стилі для laptop екранів комп'ютерів */
 
@@ -877,7 +942,11 @@ body {
 
   .footer__item {
     max-width: calc(33% - 5px);
-}
+  }
+
+  .footer__item__text {
+    font-size: 12px;
+  }
 
   .contact-info {
     max-width: 25%;
@@ -899,7 +968,7 @@ body {
 
 /* Стилі для laptop L екранів комп'ютерів */
 
-@media screen and (min-width: 1440px) and (max-width: 1700px) {
+@media screen and (min-width: 1440px) and (max-width: 1699px) {
   .header {
     margin-bottom: 10px;
   }
@@ -995,6 +1064,20 @@ body {
   .socials li a {
     font-size: 14px;
   }
+}
+
+/* Стилі для більших екранів комп'ютерів */
+
+@media screen and (min-width: 1700px) and (max-width: 1885px) {
+
+  .logo {
+    margin-left: 120px;
+  }
+
+  .company-section .container {
+    gap: 5px;
+  }
+  
 }
 
 /* Стилі для 4k екранів комп'ютерів */
