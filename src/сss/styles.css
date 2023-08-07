@@ -359,7 +359,7 @@ body {
   /* Стилі для footer */
 
   .footer {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 
   .footer .container {
@@ -710,6 +710,10 @@ body {
   text-align: center;
   width: 70%;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .goods__product__image {
@@ -717,7 +721,6 @@ body {
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центруван`ня по вертикалі */
   height: 200px; /* Встановіть висоту за вашими потребами */
-  margin-bottom: 35px;
 }
 
 .goods__product__image img {
@@ -915,6 +918,36 @@ body {
   .socials li a {
     font-size: 14px;
   }
+
+  /* AnoutUS */
+
+  .titles {
+    height: 30vh;
+    margin-bottom: 15px;
+  }
+
+
+  .titles__title {
+    font-size: 48px;
+  }
+
+  .titles__text {
+    font-size: 16px;
+  }
+
+
+  .goods__products__filters__list__item label {
+    font-size: 16px;
+  }
+
+  .goods__products__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .goods__product__title {
+    font-size: 16px;
+  }
+  
 }
 
 /* Стилі для laptop екранів комп'ютерів */
@@ -1039,6 +1072,35 @@ body {
     font-size: 14px;
   }
 
+    /* AnoutUS */
+
+  .titles {
+      height: 30vh;
+      margin-bottom: 15px;
+    }
+  
+  
+  .titles__title {
+      font-size: 48px;
+    }
+  
+  .titles__text {
+      font-size: 16px;
+    }
+  
+  
+  .goods__products__filters__list__item label {
+      font-size: 16px;
+    }
+  
+  .goods__products__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+  .goods__product__title {
+      font-size: 16px;
+    }
+
 }
 
 /* Стилі для laptop L екранів комп'ютерів */
@@ -1138,6 +1200,37 @@ body {
 
   .socials li a {
     font-size: 14px;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  /* AnoutUS */    
+    
+  .titles__title {
+        font-size: 56px;
+      }
+    
+  .titles__text {
+        font-size: 18px;
+      }
+    
+    
+  .goods__products__filters__list__item label {
+        font-size: 18px;
+      }
+    
+  .goods__products__list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+  .goods__product__title {
+        font-size: 16px;
+      }
+
+  .goods__product__image {
+    height: 220px;
   }
 }
 
@@ -1282,6 +1375,71 @@ body {
     font-size: 22px;
     line-height: 26px;
   }
+
+  /* AnoutUS */
+
+  .titles__title {
+    font-size: 70px;
+  }
+
+  .titles__text {
+    font-size: 28px;
+  }
+
+  .goods {
+    padding-bottom: 65px;
+  }
+
+  .goods__search {
+    padding: 55px 0;
+  }
+
+  #searchInput {
+    border-width: 2px;
+  }
+
+  .goods__search__input {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .goods__products__filters {
+    margin: 20px 0;
+    margin-right: 20px;
+  }
+
+  .goods__products__filters__list {
+    gap: 20px;
+  }
+
+  .goods__products__filters__list__item label {
+    font-size: 24px;
+    gap: 8px;
+  }
+
+  .goods__products__filters__list__item input {
+    height: 17px;
+    width: 17px;
+  }
+
+  .goods__products__list {
+    gap: 25px;
+  }
+
+  .goods__product {
+    padding: 30px 15px;
+    width: 80%;
+  }
+
+  .goods__product__image {
+    height: 70%;
+    width: 85%;
+  }
+
+  .goods__product__title {
+    font-size: 24px;
+  }
+  
 }
 
 
