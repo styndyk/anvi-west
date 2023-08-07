@@ -753,7 +753,7 @@ body {
 /* AnoutUS */
 
 .header-section.aboutUs {
-  background-image: none;
+  background-image: url(../images/aboutUsBg.jpg);
 }
 
 
