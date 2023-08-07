@@ -838,8 +838,83 @@ body {
     margin-bottom: 80px;
   }
   
+  .company-section__more {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
 
+  .products-title {
+    padding: 30px 0;
+  }
 
+  .products-title__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .products-title__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .products-section__block {
+    min-height: 270px;
+    margin-bottom: 30px;
+  }
+
+  .products-section__content__title {
+    font-size: 22px;
+  }
+
+  #products__nonWovenMaterials {
+    background-size: 320px;
+    background-position-y: -157px;
+  }
+
+  .products-button {
+    margin-bottom: 75px;
+  }
+
+  .products-button__link {
+    padding: 10px 150px;
+
+  }
+
+  #map-frame {
+    height: 400px;
+  }
+
+  .footer__item__info {
+    font-size: 14px;
+  }
+
+  .footer__item__title {
+    font-size: 18px;
+  }
+
+  .footer__item {
+    max-width: calc(33% - 5px);
+  }
+
+  .footer__item__text {
+    font-size: 12px;
+  }
+
+  .contact-info {
+    max-width: 25%;
+  }
+
+  .contact-form {
+    max-width: 40%;
+  }
+
+  .contact-form form {
+    font-size: 14px;
+  }
+
+  .socials li a {
+    font-size: 14px;
+  }
 }
 
 /* Стилі для laptop екранів комп'ютерів */
