@@ -1013,8 +1013,6 @@ body {
 
 /* Стилі для laptop екранів комп'ютерів */
 
-
-
 @media screen and  (min-width: 1024px) and (max-width: 1439px) {
   .header {
     margin-bottom: 35px;
@@ -1135,7 +1133,7 @@ body {
     font-size: 14px;
   }
 
-    /* AnoutUS */
+    /* Products page */
 
   .titles {
       height: 30vh;
@@ -1164,13 +1162,20 @@ body {
       font-size: 16px;
     }
 
+/* AboutUs page*/
+
+  .header-section__content__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
 }
 
-@media screen and  (min-width: 1024px) and (min-height: 745px) and (max-height: 788px) {
+/* @media screen and  (min-width: 1024px) and (min-height: 745px) and (max-height: 788px) {
   .logo {
     margin-left: 20px;
   }
-}
+} */
 
 /* Стилі для laptop L екранів комп'ютерів */
 
@@ -1275,7 +1280,7 @@ body {
     padding: 50px 0;
   }
 
-  /* AnoutUS */    
+  /* Prodits page */    
     
   .titles__title {
         font-size: 56px;
@@ -1301,6 +1306,18 @@ body {
   .goods__product__image {
     height: 220px;
   }
+
+/* AboutUs page*/
+
+.header-section__content .container {
+  max-width: 770px;
+}
+
+.header-section__content__description {
+  font-size: 16px;
+  line-height: 28px;
+}
+
 }
 
 /* Стилі для більших екранів комп'ютерів */
@@ -1409,7 +1426,7 @@ body {
 
 
   .footer__item__text {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 25px;
   }
 
@@ -1506,6 +1523,21 @@ body {
 
   .goods__product__title {
     font-size: 24px;
+  }
+
+/* About US*/
+
+  .header-section__content .container {
+    max-width: 1000px;
+  }
+
+  .header-section__content__title {
+    font-size: 70px;
+  }
+
+  .header-section__content__description {
+    font-size: 28px;
+    line-height: 46px;
   }
   
 }
