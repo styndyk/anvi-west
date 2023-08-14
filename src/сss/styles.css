@@ -51,9 +51,6 @@ body {
 
 .header-section {
   min-height: 100vh;
-  background-image: none;
-  background-size: cover;
-  background-position: center;
   margin-bottom: 40px;
 }
 
@@ -184,7 +181,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 55px;
+    gap: 65px;
   }
   
   .company-section h1 {
@@ -194,7 +191,7 @@ body {
   
   .company-section p {
     font-size: 24px; /* Задайте розмір шрифту за потребою */
-    margin-bottom: 135px;
+    line-height: 38px;
   }
 
   .company-section__more {
@@ -384,7 +381,7 @@ body {
   }
 
   .footer__item {
-    max-width: calc(33% - 20px);
+    max-width: calc(33% - 10px);
   }
 
   .footer__item__title__logo {
@@ -541,6 +538,24 @@ body {
   
 
 /* Стилі для products.html */
+
+.products-header {
+  margin-bottom: 0;
+}
+
+.header-section.products-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/ProductsBg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
+  z-index: -1;
+}
 
 /* Стилі для titles */
 
@@ -764,7 +779,7 @@ body {
 /* END Стилі для products.html */
 
 
-/* AnoutUS */
+/* AboutUS */
 
 .header-section.aboutUs {
   background-image: none;
@@ -801,11 +816,11 @@ body {
 }
 
 .header-section__content__description {
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 36px;
 }
 
-/* END AnoutUS */
+/* END AboutUS */
 
 
 /* Avaptive */
@@ -815,19 +830,21 @@ body {
   .header-section {
     display: flex;
     flex-direction: column;
-    gap: 65px;
+    gap: 60px;
     position: relative;
-    
+  }
+
+  .header-section::before {
+    opacity: 0.55;
+  }
+
+  .header {
+    padding: 0;
+    margin: 0;
   }
   
-  /* Псевдоелемент, що створює прозорий фоновий шар над основним зображенням */
-  
-
-  
-
-
   .container {
-    max-width: 900px;
+    max-width: 730px;
     }
 
   .logo {
@@ -851,12 +868,12 @@ body {
   }
 
   .company-section h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .company-section p {
     font-size: 16px;
-    margin-bottom: 80px;
+    line-height: 26px;
   }
   
   .company-section__more {
@@ -927,6 +944,7 @@ body {
 
   .contact-form {
     max-width: 40%;
+    margin-right: 25px;
   }
 
   .contact-form form {
@@ -937,7 +955,11 @@ body {
     font-size: 14px;
   }
 
-  /* AnoutUS */
+  /* Procuts page */
+
+  .header-section.products-header::before {
+    opacity: 0.55;
+  }
 
   .titles {
     height: 30vh;
@@ -946,7 +968,7 @@ body {
 
 
   .titles__title {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .titles__text {
@@ -964,6 +986,27 @@ body {
 
   .goods__product__title {
     font-size: 16px;
+  }
+
+/* AboutUs page*/
+
+  .header-section__content .container {
+    max-width: 550px;
+  }
+
+  .header-section__content__title {
+    font-size: 30px;
+  }
+
+  .header-section__content__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+/* Products page*/
+
+  .titles .container {
+    max-width: 730px;
   }
   
 }
@@ -1007,7 +1050,7 @@ body {
 
   .company-section p {
     font-size: 16px;
-    margin-bottom: 80px;
+    line-height: 24px;
   }
 
   .company-section__more {
@@ -1166,7 +1209,7 @@ body {
 
   .company-section p {
     font-size: 18px;
-    margin-bottom: 75px;
+    line-height: 28px;
   }
 
   .company-section__more {
@@ -1313,7 +1356,6 @@ body {
   .company-section p {
     font-size: 28px;
     line-height: 1.5;
-    margin-bottom: 120px;
   }
 
   .company-section__more {
@@ -1402,7 +1444,7 @@ body {
     line-height: 26px;
   }
 
-  /* AnoutUS */
+  /* Products */
 
   .titles__title {
     font-size: 70px;
