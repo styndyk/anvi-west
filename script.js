@@ -7,13 +7,13 @@ const multer = require('multer'); // Додано модуль multer
 const fs = require('fs'); 
 
 var transport = nodemailer.createTransport({
-  host: "sandbox.smtp.mailtrap.io",
-  port: 2525,
+  service: 'gmail',
   auth: {
-    user: "b685dda0e8ad07",
-    pass: "1210364c9bd81d"
+    user: 'anvizahid@gmail.com',
+    pass: 'moqpkwickdpjjmka'
   }
 });
+
 
 
 // Налаштування для отримання сервером файлів
@@ -68,12 +68,10 @@ app.use(multer().none()); // Додано multer для обробки FormData
 app.post('/send-email', (req, res) => {
   const { name, surname, email, phone, subject, message } = req.body;
 
-  console.log(name, surname, email, phone, subject, message); // Перевірте, чи виводяться дані на сервері
-
   // Створення об'єкта з даними листа
   const mailOptions = {
-    from: '7298d450b7-197da0@inbox.mailtrap.io',
-    to: 'serhii.tyndyk@gmail.com',
+    from: 'anvizahid@gmail.com',
+    to: 'anvizahid@gmail.com',
     subject: 'Нове повідомлення від форми',
     text: `
       Ім'я: ${name}
