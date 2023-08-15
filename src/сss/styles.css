@@ -273,7 +273,7 @@ body {
     background-blend-mode: multiply;
   }
 
-  #products__springBlock {
+  #products__springs {
     background-image: url(../images/products/springBlock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1231,7 +1231,7 @@ body {
     }
 
     #products__foamRubber, #products__nonWovenMaterials,
-    #products__springBlock, #products__siliconeBall,
+    #products__springs, #products__siliconeBall,
     #products__foamFiller {
       background-blend-mode: normal;
     }
