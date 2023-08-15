@@ -1036,6 +1036,25 @@ body {
     font-size: 16px;
   }
 
+
+/* AboutUs page*/
+
+  .header-section__content .container {
+    max-width: 340px;
+    gap: 15px;
+  }
+
+  .header-section__content__title {
+    font-size: 35px;
+  }
+
+  .header-section__content__description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+/*Products page*/
+
 }
 
 
