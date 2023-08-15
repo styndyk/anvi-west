@@ -837,7 +837,7 @@ body {
 
 /* Avaptive */
 
-/* iPhone 8, SE (2nd generation): */
+/* iPhone 8, SE (2nd generation): orientation: portrait */
 
 @media (max-width: 375px) and (orientation: portrait) {
 
@@ -1132,8 +1132,190 @@ body {
   .goods__product__title {
     font-size: 16px;
   }
-
 }
+
+/* iPhone 8, SE (2nd generation): orientation: landscape */
+
+  @media (max-width: 667px) and (orientation: landscape) {
+
+    .container {
+      max-width: 640px;
+    }
+
+    .header-section {
+      margin-bottom: 20px;
+    }
+
+    .header-section::before {
+      opacity: 0.55;
+      background-size: 200%;
+    }
+
+    .header {
+      padding: 0;
+      margin: 0 0 20px 0;
+      max-width: 100%;
+    }
+
+    .logo {
+      margin: 0;
+      width: 33%;
+    }
+
+    .header__logo__link__img {
+      width: 85%;
+      margin-left: -45px;
+    }
+
+    .menu {
+      gap: 35px;
+    }
+
+    .menu__item__link {
+      font-size: 14px;
+    }
+
+    .company-section {
+      max-height: 45vh;
+    }
+
+    .company-section .container {
+      gap: 5px;
+      max-width: 600px;
+    }
+
+    .company-section h1 {
+      font-size: 38px;
+    }
+
+    .company-section p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .company-section__more {
+      padding: 10px 25px;
+      border-width: 1px;
+      font-size: 14px;
+    }
+
+
+    .products-title {
+      padding: 45px 0 10px 0;
+    }
+
+    .products-title__title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .products-title__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+
+
+    .products-section {
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    .products-section .container {
+      gap: 15px;
+    }
+
+    .products-section__block {
+      min-height: 150px;
+      margin-bottom: 0;
+    }
+
+    #products__foamRubber, #products__nonWovenMaterials,
+    #products__springBlock, #products__siliconeBall,
+    #products__foamFiller {
+      background-blend-mode: normal;
+    }
+
+    #products__nonWovenMaterials {
+      background-size: 200px;
+      background-position-y: -100px;
+    }
+
+    .products-section__content__title {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+
+    .products-button {
+      margin-bottom: 70px;
+    }
+
+    .products-button__link {
+      padding: 10px 100px;
+      font-size: 16px;
+    }
+
+
+    .map {
+      margin-bottom: 0;
+    }
+
+    #map-frame {
+      height: 250px;
+    }
+
+
+    .footer .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10vw;
+    }
+
+    .footer__item  {
+      max-width: calc(90% - 10px);
+    }
+
+    .footer__item__title {
+      text-align: center;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .footer__item__info {
+      font-size: 14px;
+    }
+
+    .footer__item__info address {
+      margin-bottom: 10px;
+    }
+
+    .contact-form__title {
+      margin-bottom: 50px;
+    }
+
+    .contact-form form {
+      gap: 5px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+    }
+
+    .contact-form__button {
+      margin: 0 auto;
+    }
+
+
+    .socials {
+      gap: 30px;
+    }
+
+    .socials li a {
+      font-size: 14px;
+    }
+  }
+
 
 
 @media screen and  (min-width: 768px) and (max-width: 1023px) {
