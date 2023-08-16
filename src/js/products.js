@@ -4,34 +4,72 @@ const suggestionsList = document.getElementById('suggestionsList');
 let products = []; // Масив для зберігання всіх товарів
 let selectedCategories = []; // Масив для зберігання вибраних категорій
 
+const itemsPerPage = 20;
+let currentPage = 1;
+
+
 // Функція для відображення товарів на сторінці
-function showProducts(productsToShow) {
+function showProducts(productsToShow, start, end) {
   const productsList = document.getElementById('productsList');
   productsList.innerHTML = ''; // Очистити контейнер перед додаванням нових товарів
 
   // Проходження по списку товарів та створення блоків для кожного товару
-  productsToShow.forEach(product => {
+  for (let i = start; i < end; i++) {
+    const product = productsToShow[i];
+    if(!product) break;
+
+
     const goodsProduct = document.createElement('div');
     goodsProduct.classList.add('goods__product');
 
     // Заповнення блоку інформацією про товар
     goodsProduct.innerHTML = `
-      <div class="goods__product__image">
-        <img src="${product.image}" alt="${product.name}">
-      </div>
-      <h3 class="goods__product__title">
-        ${product.name}
-      </h3>
+    <div class="goods__product__image">
+      <img src="${product.image}" alt="${product.name}">
+    </div>
+    <h3 class="goods__product__title">
+      ${product.name}
+    </h3>
+    <div class="goods__product__properties">
       ${product.properties.size ? `<p class="goods__product__size">${product.properties.size}</p>` : ''}
       ${product.properties.color ? `<p class="goods__product__color">${product.properties.color}</p>` : ''}
       ${product.properties.footage ? `<p class="goods__product__footage">${product.properties.footage}</p>` : ''}
-      
-    `;
+    </div>
+  `;
+  
 
     // Додавання блоку товару до контейнера
     productsList.appendChild(goodsProduct);
-  });
+  }
+
+  updatePagination();
 }
+
+// Функція для оновлення пагінації
+function updatePagination() {
+  const itemsPerPage = 20; // Кількість товарів на сторінці
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+
+  const paginationContainer = document.getElementById('pagination');
+  paginationContainer.innerHTML = '';
+
+  for (let i = 1; i <= totalPages; i++) {
+    const pageButton = document.createElement('button');
+    pageButton.textContent = i;
+    pageButton.addEventListener('click', () => goToPage(i));
+    paginationContainer.appendChild(pageButton);
+
+    pageButton.classList.toggle('active', i === currentPage);
+  }
+}
+
+function goToPage(pageNumber) {
+  currentPage = pageNumber;
+  filterProducts(); // Перефільтровуємо товари
+  const productsList = document.getElementById('productsList');
+  productsList.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Прокручуємо до початку контейнера із товарами
+}
+
 
 // Функція для фільтрації товарів за обраними категоріями та пошуковим запитом
 function filterProducts() {
@@ -44,15 +82,21 @@ function filterProducts() {
     filteredProducts = filteredProductsBySearch.filter(product => selectedCategories.includes(product.category));
   }
 
-  showProducts(filteredProducts); // Відображення відфільтрованих товарів
+  // Оновлюємо пагінацію та показуємо товари для поточної сторінки
+  updatePagination(); // Оновлюємо кнопки пагінації
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  showProducts(filteredProducts, startIndex, endIndex); // Відображення сторінки
 }
+
 
 // Завантажуємо список товарів з файлу products.json
 fetch('./data/products.json')
   .then(response => response.json())
   .then(data => {
     products = data; // Зберігаємо всі товари у змінну
-    showProducts(products); // При завантаженні сторінки відображаємо всі товари
+    updatePagination(); // Додайте цей рядок
+    showProducts(products, 0, itemsPerPage);  // При завантаженні сторінки відображаємо всі товари
 
     // Функція для відображення підказок
     const showSuggestions = () => {
@@ -113,6 +157,7 @@ function handleFilterChange(event) {
     selectedCategories = selectedCategories.filter(category => category !== filterValue);
   }
   filterProducts(); // Перефільтруємо товари при зміні стану фільтра
+  goToPage(1); // Перехід на першу сторінку після зміни фільтрів
 }
 
 // Додаємо обробник подій для кожного input type="checkbox" фільтра

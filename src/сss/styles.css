@@ -1,6 +1,9 @@
 
 /* Загальні стилі */
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     margin: 0; 
@@ -628,6 +631,7 @@ body {
   position: relative;
   width: 70%; /* Задайте бажану ширину контейнера .suggestions */
   margin-top: 30px; /* Встановіть бажаний відступ від інпуту внизу */
+  /* max-height: 500px; */
 }
 
 .suggestions {
@@ -648,10 +652,13 @@ body {
 .suggestions.active {
   display: flex; /* Змінюємо display на flex, щоб використовувати Flexbox */
   flex-direction: column; /* Дозволяємо підказці переносити елементи на наступний рядок, якщо не вистачає місця */
-  justify-content: center; /* Вирівнюємо елементи підказки по лівому краю */
+  justify-content: flex-start; /* Вирівнюємо елементи підказки по лівому краю */
   align-items: flex-start; /* Вирівнюємо елементи по вертикалі по центру */
   opacity: 1;
   pointer-events: auto;
+  overflow-y: scroll;
+  max-height: 400px;
+  
 }
 
 .suggestions option {
@@ -674,6 +681,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 .goods__products__filters {
@@ -743,7 +751,7 @@ body {
   padding: 20px 15px;
   text-align: center;
   width: calc(90% - 20px);
-  height: calc(90% - 20px);
+  min-height: 350px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -765,6 +773,25 @@ body {
   border-radius: 5px;
 }
 
+.goods__product__properties {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.goods__product__size,
+.goods__product__color,
+.goods__product__footage {
+  display: none; /* Приховуємо порожні характеристики */
+}
+
+.goods__product__properties p:not(:empty) {
+  display: block; /* Відображаємо характеристики з вмістом */
+}
+
 
 .goods__product__title {
   font-size: 18px;
@@ -783,15 +810,41 @@ body {
   font-size: 14px;
 }
 
-.goods__product__details {
-  font-size: 14px;
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.goods__product__price {
-  font-size: 22px;
-  font-weight: bold;
-  /* margin-top: 10px; */
+.pagination button {
+  border: none;
+  background-color: var(--primary-color);
+  /* border-color: var(--secondary-color); */
+  color: var(--main-backgrounds-color);
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 2px;
+  margin: 0 7px;
+  transition: transform 0.2s linear;
 }
+
+.pagination button.active {
+  transform: scale(1.3);
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pagination span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pagination button:hover {
+  transform: scale(1.3);
+  
+}
+
 
 
 /*  Стилі для goods */
@@ -1134,14 +1187,32 @@ body {
 
   .goods__product {
     width: calc(90% - 5px);
-    height: calc(90% - 5px);
-    display: block;
+    min-height: 250px;
     padding: 10px 10px;
   }
 
   .goods__product__image {
     height: 65%;
     margin-bottom: 15px;
+  }
+
+  .goods__product__properties {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .goods__product__size,
+  .goods__product__color,
+  .goods__product__footage {
+    display: none; /* Приховуємо порожні характеристики */
+  }
+  
+  .goods__product__properties p:not(:empty) {
+    display: block; /* Відображаємо характеристики з вмістом */
   }
 
   .goods__product__title {
@@ -1423,7 +1494,7 @@ body {
     }
 
     .goods__product {
-      height: calc(85% - 10px);
+      min-height: 160px;
       width: calc(85% - 10px);
       padding: 10px 15px;
       justify-content: flex-start;
@@ -1432,6 +1503,25 @@ body {
     .goods__product__image {
       height: 60%;
       width: 90%;
+    }
+
+    .goods__product__properties {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+    
+    .goods__product__size,
+    .goods__product__color,
+    .goods__product__footage {
+      display: none; /* Приховуємо порожні характеристики */
+    }
+    
+    .goods__product__properties p:not(:empty) {
+      display: block; /* Відображаємо характеристики з вмістом */
     }
 
     .goods__product__title {
@@ -1622,12 +1712,31 @@ body {
   .goods__product {
     padding: 10px 10px;
     justify-content: flex-start;
-    max-height: 225px;
+    min-height: 220px;
   }
 
   .goods__product__image {
     height: 60%;
     width: 90%;
+  }
+
+  .goods__product__properties {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .goods__product__size,
+  .goods__product__color,
+  .goods__product__footage {
+    display: none; /* Приховуємо порожні характеристики */
+  }
+  
+  .goods__product__properties p:not(:empty) {
+    display: block; /* Відображаємо характеристики з вмістом */
   }
 
   .goods__product__title {
@@ -1642,10 +1751,12 @@ body {
 
   .goods__product__color {
     font-size: 14px;
+    margin-bottom: 0;
   }
 
   .goods__product__footage {
     font-size: 14px;
+    margin-bottom: 0;
   }
 
 /* AboutUs page*/
@@ -1815,16 +1926,62 @@ body {
   
   
   .goods__products__filters__list__item label {
-      font-size: 16px;
-    }
+    font-size: 16px;
+  }
   
   .goods__products__list {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .goods__product {
+    min-height: 250px;
+    max-height: 300px;
+    padding: 10px 10px;
+  }
+
+  .goods__product__image {
+    margin-bottom: 10px;
+  }
+
+
+  .goods__product__properties {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+  }
+    
+  .goods__product__size,
+  .goods__product__color,
+  .goods__product__footage {
+      display: none; /* Приховуємо порожні характеристики */
+  }
+    
+  .goods__product__properties p:not(:empty) {
+      display: block; /* Відображаємо характеристики з вмістом */
+  }
   
   .goods__product__title {
-      font-size: 16px;
-    }
+      font-size: 14px;
+      margin-bottom: 10px;
+  }
+
+  .goods__product__size {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .goods__product__color {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .goods__product__footage {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 
 /* AboutUs page*/
 
@@ -1944,7 +2101,7 @@ body {
     padding: 50px 0;
   }
 
-  /* Prodits page */    
+  /* Products page */    
     
   .titles__title {
         font-size: 56px;
@@ -1962,14 +2119,52 @@ body {
   .goods__products__list {
         grid-template-columns: repeat(3, 1fr);
       }
-    
-  .goods__product__title {
-        font-size: 16px;
-      }
 
+  .goods__product {
+    min-height: 280px;
+  }
+    
   .goods__product__image {
     height: 220px;
   }
+
+  .goods__product__properties {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+  
+  .goods__product__size,
+  .goods__product__color,
+  .goods__product__footage {
+    display: none; /* Приховуємо порожні характеристики */
+  }
+  
+  .goods__product__properties p:not(:empty) {
+    display: block; /* Відображаємо характеристики з вмістом */
+  }
+
+  .goods__product__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .goods__product__size {
+    margin-bottom: 0;
+  }
+
+  .goods__product__color {
+    margin-bottom: 0;
+  }
+
+  .goods__product__footage {
+    margin-bottom: 0;
+  }
+
+
 
 /* AboutUs page*/
 
