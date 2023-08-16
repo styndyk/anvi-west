@@ -22,12 +22,8 @@ function showProducts(productsToShow) {
       <h3 class="goods__product__title">
         ${product.name}
       </h3>
-      <p class="goods__product__size">
-        ${product.properties.size}
-      </p>
-      <p class="goods__product__color">
-        ${product.properties.color}
-      </p>
+      ${product.properties.size ? `<p class="goods__product__size">${product.properties.size}</p>` : ''}
+      ${product.properties.color ? `<p class="goods__product__color">${product.properties.color}</p>` : ''}
       
     `;
 

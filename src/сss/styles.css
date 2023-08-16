@@ -762,6 +762,7 @@ body {
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центруван`ня по вертикалі */
   height: 200px; /* Встановіть висоту за вашими потребами */
+  margin-bottom: 15px;
 }
 
 .goods__product__image img {
@@ -773,6 +774,14 @@ body {
 .goods__product__title {
   font-size: 18px;
   /* margin-top: 10px; */
+}
+
+.goods__product__size {
+  font-size: 14px;
+}
+
+.goods__product__color {
+  font-size: 14px;
 }
 
 .goods__product__details {
