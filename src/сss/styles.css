@@ -778,6 +778,10 @@ body {
   font-size: 14px;
 }
 
+.goods__product__footage {
+  font-size: 14px;
+}
+
 .goods__product__details {
   font-size: 14px;
 }
@@ -1150,6 +1154,10 @@ body {
   .goods__product__color {
     font-size: 12px;
   }
+
+  .goods__product__footage {
+    font-size: 12px;
+  }
 }
 
 /* iPhone 8, SE (2nd generation): orientation: landscape */
@@ -1440,6 +1448,10 @@ body {
       margin-bottom: 0;
     }
 
+    .goods__product__footage {
+      font-size: 12px;
+    }
+
   }
 
 
@@ -1628,6 +1640,10 @@ body {
   }
 
   .goods__product__color {
+    font-size: 14px;
+  }
+
+  .goods__product__footage {
     font-size: 14px;
   }
 

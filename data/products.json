@@ -19,7 +19,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "білий",
-        "metrag": "10 м."
+        "footage": "10 м."
       },
       "description": ""
     },
@@ -88,7 +88,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "білий",
-        "metrag": "10 м."
+        "footage": "10 м."
       },
       "description": ""  
     },
@@ -100,7 +100,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "темносірий",
-        "metrag": "100 м."
+        "footage": "100 м."
       },
       "description": ""  
     },
@@ -112,7 +112,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "",
-        "metrag": "40 м."
+        "footage": "40 м."
       },
       "description": ""  
     },
@@ -304,7 +304,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "",
-        "metrag": "30 м."
+        "footage": "30 м."
       },
       "description": ""  
     },
@@ -316,7 +316,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "",
-        "metrag": "25 м."
+        "footage": "25 м."
       },
       "description": ""  
     },
@@ -532,7 +532,7 @@
       "image": "./images/products/nonWovenMaterialsID2.jpg",
       "properties": {
         "color": "сірий",
-        "metrag": "50 м."
+        "footage": "50 м."
       },
       "description": ""  
     },
@@ -620,7 +620,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": "80 м."
+        "footage": "80 м."
       },
       "description": ""  
     },
@@ -631,7 +631,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": "60 м."
+        "footage": "60 м."
       },
       "description": ""  
     },
@@ -642,7 +642,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": "50 м."
+        "footage": "50 м."
       },
       "description": ""  
     },
@@ -653,7 +653,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": "40 м."
+        "footage": "40 м."
       },
       "description": ""  
     },
@@ -664,7 +664,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": "30 м."
+        "footage": "30 м."
       },
       "description": ""  
     },
@@ -675,7 +675,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": ""
+        "footage": ""
       },
       "description": ""  
     },
@@ -785,7 +785,7 @@
       "category": "siliconeBall",
       "image": "",
       "properties": {
-        "metrag": ""
+        "footage": ""
       },
       "description": "20 м."  
     },
