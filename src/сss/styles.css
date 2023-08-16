@@ -1100,6 +1100,10 @@ body {
     margin-top: 50px;
   }
 
+  .suggestions {
+    max-height: 250px;
+  }
+
   .suggestions.active {
     z-index: 2;
   }
@@ -1119,7 +1123,7 @@ body {
   }
 
   .goods__products__filters__list__item label {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .goods__products__list {
@@ -1127,14 +1131,14 @@ body {
   }
 
   .goods__product {
-    width: calc(90% - 15px);
-    height: 280px;
+    width: calc(90% - 5px);
+    height: 300px;
     display: block;
     padding: 10px 10px;
   }
 
   .goods__product__image {
-    height: 70%;
+    height: 65%;
     margin-bottom: 15px;
   }
 
@@ -1323,6 +1327,115 @@ body {
     .socials li a {
       font-size: 14px;
     }
+
+
+  /* AboutUs page */
+  
+    .header-section__content .container {
+    max-width: 600px;
+    gap: 5px;
+    }
+
+    .header-section__content__title {
+      font-size: 24px;
+    }
+
+    .header-section__content__description {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+
+/* Products page*/
+
+    .header-section.products-header {
+      margin-bottom: 0;
+    }
+
+    .titles {
+      margin-bottom: 0;
+    }
+
+    .titles .container {
+      max-width: 640px;
+    }
+
+    .titles__title {
+      font-size: 38px;
+    }
+
+    .titles__text {
+      font-size: 16px;
+    }
+
+    .goods__search {
+      padding-bottom: 0;
+    }
+
+    .goods__search__input {
+      font-size: 12px;
+    }
+
+    .suggestions {
+      max-height: 160px;
+      z-index: 2;
+    }
+
+    .suggestions.active {
+      justify-content: flex-start;
+      overflow-y: scroll;
+    }
+
+    .goods__products {
+      flex-direction: column;
+    }
+
+    .goods__products__filters {
+      margin: 0;
+    }
+
+    .goods__products__filters__list {
+      flex-direction: row;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .goods__products__filters__list__item label {
+      font-size: 14px;
+      gap: 5px;
+    }
+
+    .goods__products__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .goods__product {
+      height: 205px;
+      width: calc(85% - 10px);
+      padding: 10px 15px;
+      justify-content: flex-start;
+    }
+
+    .goods__product__image {
+      height: 60%;
+      width: 90%;
+    }
+
+    .goods__product__title {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    
+    .goods__product__size {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    .goods__product__color {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
   }
 
 
