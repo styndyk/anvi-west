@@ -892,7 +892,7 @@ body {
 
 /* iPhone 8, SE (2nd generation): orientation: portrait */
 
-@media (max-width: 375px) and (orientation: portrait) {
+@media (min-width: 370px) and (max-width: 414px) and (orientation: portrait) {
 
   .container {
     max-width: 355px;
@@ -1020,7 +1020,7 @@ body {
 
   .products-button__link {
     font-size: 14px;
-    padding: 15px 120px;
+    padding: 10px 100px;
   }
 
 
@@ -1216,6 +1216,219 @@ body {
   }
 
 }
+
+
+/* Ipone 8 plus orientarion:portrait */
+
+@media (max-width: 414px) and (orientation: portrait) {
+
+  .container {
+    max-width: 385px;
+    padding: 0 5px;
+  }
+
+  .products-section__content {
+    margin-top: 30%;
+  }
+
+  /*
+
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .header-section::before {
+    opacity: 0.55;
+  }
+
+  .header {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header .container {
+    justify-content: center;
+  }
+  
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .menu__item__link {
+    font-size: 14px;
+  }
+
+  .contact-button {
+    padding: 10px 10px;
+  }
+
+  .company-section {
+    min-height: 70vh;
+    max-height: 80vh;
+  }
+
+  .company-section .container {
+    max-width: 340px;
+    gap: 55px;
+  }
+
+  .company-section h1 {
+    font-size: 50px;
+  }
+
+  .company-section p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .company-section__more {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .products-title {
+    padding: 20px;
+  }
+
+  .products-title__title {
+    font-size: 34px;
+  }
+
+  .products-title__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  .products-section {
+    padding: 20px;
+  }
+
+  .products-section .container {
+    gap: 15px;
+  }
+
+  .products-section__block {
+    width: calc(50% - 10px);
+    min-height: 200px;
+    margin-bottom: 0;
+  }
+
+  .products-section__content {
+    margin-top: 40%;
+  }
+
+  #products__foamRubber {
+    background-color: none;
+    background-blend-mode: normal;
+  }
+
+  #products__nonWovenMaterials {
+    background-position-y: -130px;
+    background-size: 250px;
+  }
+
+  #products__glues {
+    background-size: 75%;
+  }
+
+  .products-section__content__title {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+
+  .products-button {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+
+  .products-button__link {
+    font-size: 14px;
+    padding: 15px 120px;
+  }
+
+
+  .map {
+    margin-bottom: 30px;
+  }
+  
+  #map-frame {
+    height: 350px;
+  }
+
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+  }
+
+  .footer__item {
+    max-width: calc(100% - 25px);
+  }
+
+  .footer__item__title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .footer__item__info {
+    font-size: 16px;
+  }
+
+  .footer__item__info address {
+    margin-bottom: 25px;
+  }
+
+  .contact-form h3 {
+    margin-bottom: 40px;
+  }
+
+  .contact-form form {
+    gap: 15px;
+  }
+
+  .form-row {
+    gap: 20px;
+  }
+
+  .form-group {
+    width: calc(50% - 15px);
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .contact-form__button {
+    margin: 0 auto;
+  }
+
+  .socials li a {
+    font-size: 16px;
+  }
+
+  
+*/
+}
+
+
+/* About page*/
+
+/* Products page */
 
 /* iPhone 8, SE (2nd generation): orientation: landscape */
 
@@ -1746,6 +1959,9 @@ body {
   }
   
 }
+
+
+/* Iphone x orientation landscape*/
 
 @media (max-width: 812px) and (orientation: landscape) {
   .header-section {
