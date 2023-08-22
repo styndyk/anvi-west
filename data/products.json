@@ -76,7 +76,6 @@
       "category": "glues",
       "image": "./images/products/gluesID8.jpg",
       "properties": {
-        "weight": "20 кг"
       },
       "description": ""  
     },
@@ -573,8 +572,8 @@
       "id": 49,
       "name": "Поролоновий наповнювач",
       "price": 0,
-      "category": "FoamFiller",
-      "image": "./images/products/gluesID8.jpg",
+      "category": "foamFiller",
+      "image": "./images/products/foamFillerWhite.jpg",
       "properties": {
         "color": ""
       },
@@ -741,7 +740,7 @@
       "category": "lamellae",
       "image": "./images/products/lamel.jpg",
       "properties": {
-        "size": ""
+        "fastening": "Пластмасса"
       },
       "description": ""  
     },
@@ -752,7 +751,7 @@
       "category": "lamellae",
       "image": "./images/products/lamel.jpg",
       "properties": {
-        "size": ""
+        "fastening": "Пластмасса"
       },
       "description": ""  
     },
@@ -763,7 +762,7 @@
       "category": "lamellae",
       "image": "./images/products/lamel.jpg",
       "properties": {
-        "size": ""
+        "fastening": "Пластмасса"
       },
       "description": ""  
     },
@@ -774,7 +773,7 @@
       "category": "lamellae",
       "image": "./images/products/lamel.jpg",
       "properties": {
-        "size": ""
+        "fastening": "Пластмасса"
       },
       "description": ""  
     },
@@ -810,7 +809,593 @@
         "color": ""
       },
       "description": ""  
-    }
+    },
+    {
+      "id": 71,
+      "name": "ДВП лист",
+      "price": 0,
+      "category": "fiberboard",
+      "image": "./images/products/fiberboard.jfif",
+      "properties": {
+        "color": "Чорнове",
+        "size": "2.5x2750x1700"
 
+      },
+      "description": ""  
+    },
+    {
+      "id": 72,
+      "name": "ДВП лист",
+      "price": 0,
+      "category": "fiberboard",
+      "image": "./images/products/fiberboard.jfif",
+      "properties": {
+        "color": "Чорнове",
+        "size": "3.2x2750x1700"
+      },
+      "description": ""  
+    },
+    {
+      "id": 73,
+      "name": "ДВП лист",
+      "price": 0,
+      "category": "fiberboard",
+      "image": "./images/products/fiberboardWhite",
+      "properties": {
+        "color": "Білий",
+        "size": "3.2x2750x1700"
+      },
+      "description": ""  
+    },
+    {
+      "id": 74,
+      "name": "Флізелін 50 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelinBlack50.webp",
+      "properties": {
+        "color": "Чорний"
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 75,
+      "name": "Флізелін 50 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelin50bej",
+      "properties": {
+        "color": "Бежевий"
+      },
+      "description": ""  
+    },
+    {
+      "id": 76,
+      "name": "Флізелін 60 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelinBlack50.webp",
+      "properties": {
+        "color": "Чорний"
+      },
+      "description": ""  
+    },
+    {
+      "id": 77,
+      "name": "Флізелін 60 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelin50bej",
+      "properties": {
+        "color": "Бежевий"
+      },
+      "description": ""  
+    },
+    {
+      "id": 78,
+      "name": "Флізелін 70 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelinBlack50.webp",
+      "properties": {
+        "color": "Чорний"
+      },
+      "description": ""  
+    },
+    {
+      "id": 79,
+      "name": "Флізелін 70 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelin50bej",
+      "properties": {
+        "color": "Бежевий"
+      },
+      "description": ""  
+    },
+    {
+      "id": 80,
+      "name": "Флізелін 80 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelinBlack50.webp",
+      "properties": {
+        "color": "Чорний"
+      },
+      "description": ""  
+    },
+    {
+      "id": 81,
+      "name": "Флізелін 80 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelin50bej",
+      "properties": {
+        "color": "Бежевий"
+      },
+      "description": ""  
+    },
+    {
+      "id": 82,
+      "name": "Флізелін 100 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelinBlack50.webp",
+      "properties": {
+        "color": "Чорний"
+      },
+      "description": ""  
+    },
+    {
+      "id": 83,
+      "name": "Флізелін 100 г/м²",
+      "price": 0,
+      "category": "nonWovenMaterials",
+      "image": "./images/products/flizelin50bej",
+      "properties": {
+        "color": "Бежевий"
+      },
+      "description": ""  
+    },
+    {
+      "id": 84,
+      "name": "Зачіп лінійний",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/HookLinear",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 85,
+      "name": "Зачіп Папа/Мама",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/hookPapaMama",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 86,
+      "name": "Завіс Великий К275",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/hookBig40x100.jpg",
+      "properties": {
+        "size": "40x100 мм."
+      },
+      "description": ""  
+    },
+    {
+      "id": 87,
+      "name": "Завіс Малий К274",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/hookSmall40x40",
+      "properties": {
+        "size": "40x40 мм." 
+      },
+      "description": ""  
+    },
+    {
+      "id": 88,
+      "name": "Ніжка - опора",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/02-04.jpg",
+      "properties": {
+        "size": "0.2/0.4"
+      },
+      "description": ""  
+    },
+    {
+      "id": 89,
+      "name": "Ніжка - опора",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/07-04.jpg",
+      "properties": {
+        "size": "0.7/0.4"
+      },
+      "description": ""  
+    },
+    {
+      "id": 90,
+      "name": "Ніжка",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigka5sm",
+      "properties": {
+        "size": "5 см."
+      },
+      "description": ""  
+    },
+    {
+      "id": 91,
+      "name": "Ніжка",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigka8sm.jpg",
+      "properties": {
+        "size": "8 см."
+      },
+      "description": ""  
+    },
+    {
+      "id": 92,
+      "name": "Ніжка L220",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigkaL220.jpg",
+      "properties": {
+        "size": "220 мм."
+      },
+      "description": ""  
+    },
+    {
+      "id": 93,
+      "name": "Ніжка F30",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigkaF30.jpg",
+      "properties": {
+        "size": ""
+      },
+      "description": ""  
+    },
+    {
+      "id": 94,
+      "name": "Ніжка F50",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigkaF30.jpg",
+      "properties": {
+        "size": ""
+      },
+      "description": ""  
+    },
+    {
+      "id": 95,
+      "name": "Ніжка Трикутна",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigkaTriangle.jpg",
+      "properties": {
+        "size": ""
+      },
+      "description": ""  
+    },
+    {
+      "id": 96,
+      "name": "Ніжка Овальна або Пуфа",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigkaOval.jpg",
+      "properties": {
+        "size": ""
+      },
+      "description": ""  
+    },
+    {
+      "id": 97,
+      "name": "Скоба Bizon",
+      "price": 0,
+      "category": "staples",
+      "image": "./images/products/stables380-10.jpg",
+      "properties": {
+        "size": "380/10",
+        "quantityOfPack": "18 000 шт.",
+        "quantityofBox": "6 упаковок"
+      },
+      "description": ""  
+    },
+    {
+      "id": 98,
+      "name": "Скоба Bizon",
+      "price": 0,
+      "category": "staples",
+      "image": "./images/products/stables380-14.jpg",
+      "properties": {
+        "size": "380/14",
+        "quantityOfPack": "12 000 шт.",
+        "quantityofBox": "6 упаковок"
+      },
+      "description": ""  
+    },
+    {
+      "id": 99,
+      "name": "Скоба Bizon",
+      "price": 0,
+      "category": "staples",
+      "image": "./images/products/stables380-16.jpg",
+      "properties": {
+        "size": "380/16",
+        "quantityOfPack": "12 000 шт.",
+        "quantityofBox": "6 упаковок"
+      },
+      "description": ""  
+    },
+    {
+      "id": 100,
+      "name": "Скоба Bizon",
+      "price": 0,
+      "category": "staples",
+      "image": "./images/products/stables380-38.jpg",
+      "properties": {
+        "size": "380/38",
+        "quantityofBox": "12 600 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 101,
+      "name": "Скоба Bizon",
+      "price": 0,
+      "category": "staples",
+      "image": "./images/products/stables380-04.jpg",
+      "properties": {
+        "size": "380/04",
+        "quantityOfPack": "16 500 шт.",
+        "quantityofBox": "10 упаковок"
+      },
+      "description": ""  
+    },
+    {
+      "id": 102,
+      "name": "Зачіп до пружини-змійки",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/hookToSnake.jpg",
+      "properties": {
+        "quantityOfPack": "2000 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 103,
+      "name": "Крейда",
+      "price": 0,
+      "category": "chalk",
+      "image": "./images/products/chalkWhite.jpg",
+      "properties": {
+        "producer": "Чехія",
+        "color": "Білий",
+        "quantityOfPack": "100 шт."
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 104,
+      "name": "Крейда",
+      "price": 0,
+      "category": "chalk",
+      "image": "./images/products/chalkWhiteBlue.jpg",
+      "properties": {
+        "producer": "Чехія",
+        "color": "Рожевий",
+        "quantityOfPack": "100 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 105,
+      "name": "Крейда",
+      "price": 0,
+      "category": "chalk",
+      "image": "./images/products/chalkWhiteBlue.jpg",
+      "properties": {
+        "producer": "Чехія",
+        "color": "Голубий",
+        "quantityOfPack": "100 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 106,
+      "name": "Крейда",
+      "price": 0,
+      "category": "chalk",
+      "image": "./images/products/chalkWhiteBlue.jpg",
+      "properties": {
+        "producer": "Чехія",
+        "color": "Синій",
+        "quantityOfPack": "100 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 107,
+      "name": "Замок",
+      "price": 0,
+      "category": "locksAndSliders",
+      "image": "./images/products/zamok.jpg",
+      "properties": {
+        "color": "Чорний, Білий, Бежевий",
+        "footage": "200 м."
+      },
+      "description": ""  
+    },
+    {
+      "id": 108,
+      "name": "Бігунок до замка",
+      "price": 0,
+      "category": "locksAndSliders",
+      "image": "./images/products/bigunok.jpg",
+      "properties": {
+        "color": "Чорний, Білий, Бежевий",
+        "quantityOfPack": "2000 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 109,
+      "name": "Ніж до паралону",
+      "price": 0,
+      "category": "knives",
+      "image": "./images/products/knifeToFoamRubber.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 110,
+      "name": "Ґудзики",
+      "price": 0,
+      "category": "buttons",
+      "image": "./images/products/buttons.jpg",
+      "properties": {
+        "quantityOfPack": "1000 шт."
+      },
+      "description": ""  
+    },
+    {
+      "id": 111,
+      "name": "Механізм Алькрон",
+      "price": 0,
+      "category": "mechanisms",
+      "image": "./images/products/mechanismAlcron.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 112,
+      "name": "Механізм Дельфін з двома пружинами (великий)",
+      "price": 0,
+      "category": "mechanisms",
+      "image": "./images/products/mechanismDelfinBig.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 113,
+      "name": "Механізм Дельфін з двома пружинами (середній)",
+      "price": 0,
+      "category": "mechanisms",
+      "image": "./images/products/mechanismDelfinMedium.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 114,
+      "name": "Механізм Дельфін з двома пружинами (малий)",
+      "price": 0,
+      "category": "mechanisms",
+      "image": "./images/products/mechanismDelfinSmall.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 115,
+      "name": "Механізм Крісло",
+      "price": 0,
+      "category": "mechanisms",
+      "image": "./images/products/mechanismChair.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 116,
+      "name": "Механізм Книжка",
+      "price": 0,
+      "category": "mechanisms",
+      "image": "./images/products/mechanismBook.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 117,
+      "name": "Ніжка",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigka2sm.jpg",
+      "properties": {
+        "size": "2 см."
+      },
+      "description": ""  
+    },
+    {
+      "id": 118,
+      "name": "Кріплення до ламелі",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/hookToLamel.jpg",
+      "properties": {
+        
+      },
+      "description": ""  
+    },
+    {
+      "id": 119,
+      "name": "Ніжка Стакан",
+      "price": 0,
+      "category": "hooks",
+      "image": "./images/products/nigka10sm.jpg",
+      "properties": {
+        "size": "10 см."
+      },
+      "description": ""  
+    },
+    {
+      "id": 120,
+      "name": "Кокосова стружка",
+      "price": 0,
+      "category": "kokos",
+      "image": "./images/products/kokosRulon.jpg",
+      "properties": {
+        "size": "200х2000х1-2 см."
+      },
+      "description": ""  
+    },
+    {
+      "id": 121,
+      "name": "Кокосова стружка",
+      "price": 0,
+      "category": "kokos",
+      "image": "./images/products/kokosLust.jpg",
+      "properties": {
+        "size": "160x200 см./лист"
+      },
+      "description": ""  
+    }
+    
   ]
   
