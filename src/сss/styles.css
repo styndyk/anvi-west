@@ -784,7 +784,8 @@ body {
 
 .goods__product__size,
 .goods__product__color,
-.goods__product__footage {
+.goods__product__footage,
+.goods__product__fastening {
   display: none; /* Приховуємо порожні характеристики */
 }
 
@@ -800,6 +801,11 @@ body {
 
 .goods__product__properties {
   font-size: 14px;
+}
+
+.goods__product__properties__name {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .pagination {
@@ -1199,7 +1205,8 @@ body {
   
   .goods__product__size,
   .goods__product__color,
-  .goods__product__footage {
+  .goods__product__footage,
+  .goods__product__fastening {
     display: none; /* Приховуємо порожні характеристики */
   }
   
@@ -1714,7 +1721,8 @@ body {
     
     .goods__product__size,
     .goods__product__color,
-    .goods__product__footage {
+    .goods__product__footage,
+    .goods__product__fastening {
       display: none; /* Приховуємо порожні характеристики */
     }
     
@@ -1919,7 +1927,8 @@ body {
   
   .goods__product__size,
   .goods__product__color,
-  .goods__product__footage {
+  .goods__product__footage,
+  .goods__product__fastening {
     display: none; /* Приховуємо порожні характеристики */
     margin-bottom: 0;
   }
@@ -2269,7 +2278,8 @@ body {
     
   .goods__product__size,
   .goods__product__color,
-  .goods__product__footage {
+  .goods__product__footage,
+  .goods__product__fastening {
       display: none; /* Приховуємо порожні характеристики */
       margin-bottom: 0;
   }
@@ -2443,7 +2453,8 @@ body {
   
   .goods__product__size,
   .goods__product__color,
-  .goods__product__footage {
+  .goods__product__footage,
+  .goods__product__fastening {
     display: none; /* Приховуємо порожні характеристики */
     margin-bottom: 0;
   }

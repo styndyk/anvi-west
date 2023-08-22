@@ -31,9 +31,13 @@ function showProducts(productsToShow, start, end) {
       ${product.name}
     </h3>
     <div class="goods__product__properties">
-      ${product.properties.size ? `<p class="goods__product__size">${product.properties.size}</p>` : ''}
-      ${product.properties.color ? `<p class="goods__product__color">${product.properties.color}</p>` : ''}
-      ${product.properties.footage ? `<p class="goods__product__footage">${product.properties.footage}</p>` : ''}
+      ${product.properties.size ? `<p class="goods__product__size"><span class="goods__product__properties__name">Розмір</span> ${product.properties.size}</p>` : ''}
+      ${product.properties.color ? `<p class="goods__product__color"><span class="goods__product__properties__name">Колір</span> ${product.properties.color}</p>` : ''}
+      ${product.properties.footage ? `<p class="goods__product__footage"><span class="goods__product__properties__name">Метраж</span> ${product.properties.footage}</p>` : ''}
+      ${product.properties.fastening ? `<p class="goods__product__fastening"><span class="goods__product__properties__name">Кріплення</span> ${product.properties.fastening}</p>` : ''}
+      ${product.properties.quantityOfPack ? `<p class="goods__product__quantityOfPack"><span class="goods__product__properties__name">Кількість в упаковці</span> ${product.properties.quantityOfPack}</p>` : ''}
+      ${product.properties.quantityofBox ? `<p class="goods__product__quantityofBox"><span class="goods__product__properties__name">Кількість в ящику</span> ${product.properties.quantityofBox}</p>` : ''}
+      ${product.properties.producer ? `<p class="goods__product__producer"><span class="goods__product__properties__name">Виробник</span> ${product.properties.producer}</p>` : ''}
     </div>
   `;
   
