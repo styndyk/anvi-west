@@ -549,6 +549,7 @@ body {
 
 .products-header {
   margin-bottom: 0;
+  min-height: 70vh;
 }
 
 .header-section.products-header::before {
