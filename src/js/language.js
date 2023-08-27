@@ -119,10 +119,13 @@ const translations = {
     russian: russianTranslations
 };
 
+// Елемент для вибору мови
+const languageSelect = document.getElementById("languageSelect");
 
 
 // Функція для встановлення перекладів
 let activeLanguage = "ukrainian"; // Встановіть активну мову тут
+
 
 function setTranslations() {
   const elementsToTranslate = document.querySelectorAll("[data-translation]");
@@ -138,16 +141,30 @@ function setTranslations() {
   });
 }
 
+// Перевіряємо, чи вже збережена мова в localStorage
+const savedLanguage = localStorage.getItem("selectedLanguage");
+if (savedLanguage && translations[savedLanguage]) {
+    activeLanguage = savedLanguage;
+    setTranslations();
+
+    // Змінюємо вибране значення у елементі <select>
+    languageSelect.value = activeLanguage;
+}
+
 // Функція для зміни активної мови
 function changeLanguage(newLanguage) {
     if (translations[newLanguage] && activeLanguage !== newLanguage) {
       activeLanguage = newLanguage;
       setTranslations(); // Перевід текстів з нової активної мови
+      // Зберігаємо обрану мову у localStorage
+      localStorage.setItem("selectedLanguage", newLanguage);
     }
 }
 
+
+
 // Слухач події зміни мови
-const languageSelect = document.getElementById("languageSelect");
+
 languageSelect.addEventListener("change", function () {
   changeLanguage(languageSelect.value);
 });
