@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Анві-Захід</title>
+  <title data-translation="homePagePageTitle">Анві-Захід</title>
   <link rel="stylesheet" href="../сss/fonts.css">
   <link rel="stylesheet" href="../сss/colors.css">
   <link rel="stylesheet" href="../сss/styles.css">
@@ -19,29 +19,35 @@
         <nav>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__item__link" id="home" href="/">Головна сторінка</a>
+              <a class="menu__item__link" id="home" href="/" data-translation="homeMenu">Головна сторінка</a>
             </li>
             <li class="menu__item">
-              <a class="menu__item__link" id="aboutUs" href="/aboutUs">Про нас</a>
+              <a class="menu__item__link" id="aboutUs" href="/aboutUs" data-translation="aboutUsMenu">Про нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__item__link" id="products" href="/products">Товари</a>
+              <a class="menu__item__link" id="products" href="/products" data-translation="productsMenu">Товари</a>
             </li>
             <li class="menu__item contact-button">
-              <a class="menu__item__link" href="#contacts">Контакти</a>
+              <a class="menu__item__link" href="#contacts" data-translation="contactsMenu">Контакти</a>
             </li>
           </ul>
+
+          <select id="languageSelect">
+            <option value="ukrainian">UA</option>
+            <option value="russian">RU</option>
+          </select>
         </nav>
+        
       </div>
     </header>
   
     <div class="company-section">
       <div class="container">
-        <h1>Анві-Захід</h1>
-        <p>
-          Ласкаво просимо до гуртівні "Анві-Захід" – вашого надійного партнера в області меблевої фурнітури та комплектуючих до меблів
+        <h1 data-translation="homePagePageTitle">Анві-Захід</h1>
+        <p data-translation="homePageDescription">
+          Ласкаво просимо до гуртівні "Анві-Захід" – вашого надійного партнера в області меблевої фурнітури та комплектуючих до м'яких меблів
         </p>
-        <a href="/aboutUs" class="company-section__more">
+        <a href="/aboutUs" class="company-section__more" data-translation="more">
           Більше
         </a>
       </div>
@@ -52,10 +58,10 @@
 
   <section class="products-title">
     <div class="container">
-      <h2 class="products-title__title">
+      <h2 class="products-title__title" data-translation="productsTitle">
         Товари
       </h2>
-      <p class="products-title__text">
+      <p class="products-title__text" data-translation="productsText">
         Представлені основні види товарів
       </p>
     </div>
@@ -65,41 +71,40 @@
     <div class="container">
       <a href="products?item=foamRubber" class="products-section__block" id="products__foamRubber" data-item="foamRubber">
         <div class="products-section__content">
-          <h3 class="products-section__content__title">Поролон</h3>
+          <h3 class="products-section__content__title" data-translation="foamRubber">Поролон</h3>
         </div>
       </a>
       <a href="products?item=nonWovenMaterials" class="products-section__block" id="products__nonWovenMaterials" data-item="nonWovenMaterials">
         <div class="products-section__content">
-          <h3 class="products-section__content__title">Неткані матеріали</h3>
+          <h3 class="products-section__content__title" data-translation="nonWovenMaterials">Неткані матеріали</h3>
         </div>
       </a>
       <a href="products?item=springs" class="products-section__block" id="products__springs" data-item="springs">
         <div class="products-section__content">
-          <h3 class="products-section__content__title">Пружинний блок</h3>
+          <h3 class="products-section__content__title" data-translation="springs">Пружинний блок</h3>
         </div>
       </a>
       <a href="products?item=siliconeBall" class="products-section__block" id="products__siliconeBall" data-item="siliconeBall">
         <div class="products-section__content">
-          <h3 class="products-section__content__title">Силікована кулька (холофайбер)</h3>
+          <h3 class="products-section__content__title" data-translation="siliconeBall">Силіконова кулька (холлофайбер)</h3>
         </div>
       </a>
       <a href="products?item=foamFiller" class="products-section__block" id="products__foamFiller" data-item="foamFiller">
         <div class="products-section__content">
-          <h3 class="products-section__content__title">Поролоновий наповнювач</h3>
+          <h3 class="products-section__content__title" data-translation="foamFiller">Поролоновий наповнювач</h3>
         </div>
       </a>
       <a href="products?item=glues" class="products-section__block" id="products__glues" data-item="glues">
         <div class="products-section__content">
-          <h3 class="products-section__content__title">Клеї</h3>
+          <h3 class="products-section__content__title" data-translation="glues">Клеї</h3>
         </div>
       </a>
     </div>
-    <!-- Додайте решту блоків з товарами -->
   </section>
 
   <section class="products-button">
     <div class="container">
-      <a href="products" class="products-button__link">Всі товари</a>
+      <a href="products" class="products-button__link" data-translation="allProducts">Всі товари</a>
     </div>
   </section>
   <section class="map">
@@ -111,9 +116,9 @@
   <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer__item contact-info">
-        <h3 class="footer__item__title">Ми знаходимося</h3>
+        <h3 class="footer__item__title" data-translation="locationTitle">Ми знаходимося</h3>
         <div class="footer__item__info">
-          <address>
+          <address data-translation="locationAddress">
               вулиця Бічна Промислова, 3, Червоноград, Львівська область, 80100
           </address>
           <ul>
@@ -128,39 +133,39 @@
       </div>
 
       <div class="footer__item contact-form">
-        <h3 class="contact-form__title footer__item__title">
+        <h3 class="contact-form__title footer__item__title" data-translation="contactTitle">
           Зв'язатися з нами
         </h3>
         <form  method="POST" id="form">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Ім'я: *</label>
+              <label for="name" data-translation="firstName">Ім'я: *</label>
               <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-              <label for="surname">Прізвище *</label>
+              <label for="surname" data-translation="lastName">Прізвище *</label>
               <input type="text" id="surname" name="surname" required>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="email">Електронна пошта *</label>
+              <label for="email" data-translation="email">Електронна пошта *</label>
               <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$" title="Будь ласка, введіть електронну пошту у форматі XX@XXX.com" required>
             </div>
             <div class="form-group">
-              <label for="phone">Номер телефону *</label>
+              <label for="phone" data-translation="phone">Номер телефону *</label>
               <input type="tel" id="phone" name="phone" pattern="^(\+?38)?0\d{2}\d{7}$" title="Будь ласка, введіть номер телефону у форматі 380XXXXXXXXX або 0ХХХХХХХ" required>
             </div>
           </div>
           <div class="form-group full-width">
-            <label for="subject">Тема</label>
+            <label for="subject" data-translation="subject">Тема</label>
             <input type="text" id="subject" name="subject">
           </div>
           <div class="form-group full-width">
-            <label for="message">Повідомлення</label>
+            <label for="message" data-translation="message">Повідомлення</label>
             <textarea id="message" name="message" rows="5"></textarea>
           </div>
-          <button type="submit" class="contact-form__button" id="send-button">Надіслати</button>
+          <button type="submit" class="contact-form__button" id="send-button" data-translation="sendButton">Надіслати</button>
         </form>
 
         <!-- Контейнер для повідомлення про успішну відправку -->
@@ -174,7 +179,7 @@
         </div>
       </div>
       <div class="footer__item socials">
-        <h3 class="footer__item__title">
+        <h3 class="footer__item__title" data-translation="socialsTitle">
           Месенджери та соціальні мережі
         </h3>
         <ul>
@@ -185,6 +190,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/language.js" defer></script>
   <script src="../js/common.js"></script>
   <script src="../js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>

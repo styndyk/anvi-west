@@ -2324,10 +2324,6 @@ body {
     max-width: 1200px;
   }
 
-  .logo {
-    
-  }
-
   .header__logo__link__img {
     width: 145px;
   }
@@ -2393,6 +2389,10 @@ body {
   .products-button__link {
     padding: 10px 150px;
 
+  }
+
+  .contact-form {
+    max-width: 40%;
   }
 
 

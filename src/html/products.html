@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Товари - Анві-Захід</title>
+    <title data-translation="productsPagePageTitle">Товари - Анві-Захід</title>
     <link rel="stylesheet" href="../сss/fonts.css">
     <link rel="stylesheet" href="../сss/colors.css">
     <link rel="stylesheet" href="../сss/styles.css">
@@ -19,28 +19,33 @@
           <nav>
             <ul class="menu">
               <li class="menu__item">
-                <a class="menu__item__link" id="home" href="/">Головна сторінка</a>
+                <a class="menu__item__link" id="home" href="/" data-translation="homeMenu">Головна сторінка</a>
               </li>
               <li class="menu__item">
-                <a class="menu__item__link" id="aboutUs" href="/aboutUs">Про нас</a>
+                <a class="menu__item__link" id="aboutUs" href="/aboutUs" data-translation="aboutUsMenu">Про нас</a>
               </li>
               <li class="menu__item">
-                <a class="menu__item__link" id="products" href="/products">Товари</a>
+                <a class="menu__item__link" id="products" href="/products" data-translation="productsMenu">Товари</a>
               </li>
               <li class="menu__item contact-button">
-                <a class="menu__item__link" href="#contacts">Контакти</a>
+                <a class="menu__item__link" href="#contacts" data-translation="contactsMenu">Контакти</a>
               </li>
             </ul>
+  
+            <select id="languageSelect">
+              <option value="ukrainian">UA</option>
+              <option value="russian">RU</option>
+            </select>
           </nav>
         </div>
       </header>
 
       <div class="titles">
         <div class="container">
-            <h1 class="titles__title">
+            <h1 class="titles__title" data-translation="productsPagetitle">
                 Товари
             </h1>
-            <p class="titles__text">
+            <p class="titles__text" data-translation="productsPagedescription">
                 Представлені всі види товарів
             </p>
         </div>
@@ -50,7 +55,7 @@
     <section class="goods">
         <div class="container">
             <div class="goods__search">
-                <input type="search" class="goods__search__input" placeholder="Введіть пошуковий запит" id="searchInput">
+                <input type="search" class="goods__search__input" placeholder="Введіть пошуковий запит" id="searchInput" data-translation="productsPagesearchPlaceholder">
                 <div class="suggestions__container">
                   <div class="suggestions" id="suggestionsList"></div>
                 </div>
@@ -62,35 +67,35 @@
                 <ul class="goods__products__filters__list"> 
                     <li class="goods__products__filters__list__item">
                         <label>
-                            <span class="goods__products__filters__list__item__text">Поролон</span>
+                            <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersFoamRubber">Поролон</span>
                             <input type="checkbox" name="filter" value="foamRubber">
                         </label>
                     </li>
                     <li class="goods__products__filters__list__item">
                         <label>
                             
-                            <span class="goods__products__filters__list__item__text">Неткані матеріали</span>
+                            <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersNonWovenMaterials">Неткані матеріали</span>
                             <input type="checkbox" name="filter" value="nonWovenMaterials">
                         </label>
                     </li>
                     <li class="goods__products__filters__list__item">
                         <label>
                             
-                            <span class="goods__products__filters__list__item__text">Пружини</span>
+                            <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersSprings">Пружини</span>
                             <input type="checkbox" name="filter" value="springs">
                         </label>
                     </li>
                     <li class="goods__products__filters__list__item">
                         <label>
                             
-                            <span class="goods__products__filters__list__item__text">Синтепон та холофайбер</span>
+                            <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersSiliconeBall">Синтепон та холофайбер</span>
                             <input type="checkbox" name="filter" value="siliconeBall">
                         </label>
                     </li>
                     <li class="goods__products__filters__list__item">
                       <label>
                           
-                          <span class="goods__products__filters__list__item__text">Клей</span>
+                          <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersGlues">Клей</span>
                           <input type="checkbox" name="filter" value="glues">
                       </label>
                   </li>
@@ -98,7 +103,7 @@
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">Пас</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersPass">Пас</span>
                         <input type="checkbox" name="filter" value="pass">
                     </label>
                   </li>
@@ -106,35 +111,35 @@
                   <li class="goods__products__filters__list__item">
                   <label>
                       
-                      <span class="goods__products__filters__list__item__text">Ламелі</span>
+                      <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersLamellae">Ламелі</span>
                       <input type="checkbox" name="filter" value="lamellae">
                   </label>
                   </li>
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">ДВП листи</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersFiberboard">ДВП листи</span>
                         <input type="checkbox" name="filter" value="fiberboard">
                     </label>
                   </li>
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">Зачепи на ніжки</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersHooks">Зачепи на ніжки</span>
                         <input type="checkbox" name="filter" value="hooks">
                     </label>
                   </li>
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">Скоби</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersStaples">Скоби</span>
                         <input type="checkbox" name="filter" value="staples">
                     </label>
                   </li>
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">Крейда</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersChalk">Крейда</span>
                         <input type="checkbox" name="filter" value="chalk">
                     </label>
                   </li>
@@ -142,7 +147,7 @@
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">Замки та бігунки</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersLocksAndSliders">Замки та бігунки</span>
                         <input type="checkbox" name="filter" value="locksAndSliders">
                     </label>
                   </li>
@@ -150,7 +155,7 @@
                   <li class="goods__products__filters__list__item">
                     <label>
                         
-                        <span class="goods__products__filters__list__item__text">Механізми</span>
+                        <span class="goods__products__filters__list__item__text" data-translation="productsPagefiltersMechanisms">Механізми</span>
                         <input type="checkbox" name="filter" value="mechanisms">
                     </label>
                   </li>
@@ -173,82 +178,83 @@
 
 
     <footer class="footer" id="contacts">
-        <div class="container">
-          <div class="footer__item contact-info">
-            <h3 class="footer__item__title">Ми знаходимося</h3>
-            <div class="footer__item__info">
-              <address>
-                  вулиця Бічна Промислова, 3, Червоноград, Львівська область, 80100
-              </address>
-              <ul>
-                <li>
-                  <a href="tel:+380676750868">0(67)6750868</a>
-                </li>
-                <li>
-                  <a href="mailto:anvizahid@gmail.com">anvizahid@gmail.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    
-          <div class="footer__item contact-form">
-            <h3 class="contact-form__title footer__item__title">
-              Зв'язатися з нами
-            </h3>
-            <form action="/send-email" method="POST" id="form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Ім'я: *</label>
-                  <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="surname">Прізвище *</label>
-                  <input type="text" id="surname" name="surname" required>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email">Електронна пошта *</label>
-                  <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$" title="Будь ласка, введіть електронну пошту у форматі XX@XXX.com" required>
-                </div>
-                <div class="form-group">
-                  <label for="phone">Номер телефону *</label>
-                  <input type="tel" id="phone" name="phone" pattern="^(\+?38)?0\d{2}\d{7}$" title="Будь ласка, введіть номер телефону у форматі 380XXXXXXXXX або 0ХХХХХХХ" required>
-                </div>
-              </div>
-              <div class="form-group full-width">
-                <label for="subject">Тема</label>
-                <input type="text" id="subject" name="subject">
-              </div>
-              <div class="form-group full-width">
-                <label for="message">Повідомлення</label>
-                <textarea id="message" name="message" rows="5"></textarea>
-              </div>
-              <button type="submit" class="contact-form__button" id="send-button">Надіслати</button>
-            </form>
-
-            <!-- Контейнер для повідомлення про успішну відправку -->
-            <div id="success-message" class="hidden">
-              Ваше звернення було успішно відправлене нашим менеджерам. Ми зв’яжемося із вами у найближчий час.
-            </div>
-    
-            <!-- Контейнер для повідомлення про помилку -->
-            <div id="error-message" class="hidden">
-              Сталася помилка при відправці звернення. Спробуйте зв"язатися з нами за допомогою соціальних мереж чи телефону.
-            </div>
-          </div>
-          <div class="footer__item socials">
-            <h3 class="footer__item__title">
-              Месенджери та соціальні мережі
-            </h3>
+      <div class="container">
+        <div class="footer__item contact-info">
+          <h3 class="footer__item__title" data-translation="locationTitle">Ми знаходимося</h3>
+          <div class="footer__item__info">
+            <address data-translation="locationAddress">
+                вулиця Бічна Промислова, 3, Червоноград, Львівська область, 80100
+            </address>
             <ul>
-              <li><a href="https://www.facebook.com/AnviZahid" target="_blank">Facebook</a></li>
-              <li><a href="https://www.instagram.com/anvizahid" target="_blank">Instagram</a></li>
-              <li><a href="viber://add?number=380676750868" target="_blank">Viber</a></li>
+              <li>
+                <a href="tel:+380676750868">0(67)6750868</a>
+              </li>
+              <li>
+                <a href="mailto:anvizahid@gmail.com">anvizahid@gmail.com</a>
+              </li>
             </ul>
           </div>
         </div>
+  
+        <div class="footer__item contact-form">
+          <h3 class="contact-form__title footer__item__title" data-translation="contactTitle">
+            Зв'язатися з нами
+          </h3>
+          <form  method="POST" id="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-translation="firstName">Ім'я: *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="surname" data-translation="lastName">Прізвище *</label>
+                <input type="text" id="surname" name="surname" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-translation="email">Електронна пошта *</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$" title="Будь ласка, введіть електронну пошту у форматі XX@XXX.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" data-translation="phone">Номер телефону *</label>
+                <input type="tel" id="phone" name="phone" pattern="^(\+?38)?0\d{2}\d{7}$" title="Будь ласка, введіть номер телефону у форматі 380XXXXXXXXX або 0ХХХХХХХ" required>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="subject" data-translation="subject">Тема</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group full-width">
+              <label for="message" data-translation="message">Повідомлення</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="contact-form__button" id="send-button" data-translation="sendButton">Надіслати</button>
+          </form>
+  
+          <!-- Контейнер для повідомлення про успішну відправку -->
+          <div id="success-message" class="hidden">
+            Ваше звернення було успішно відправлене нашим менеджерам. Ми зв’яжемося із вами у найближчий час.
+          </div>
+  
+          <!-- Контейнер для повідомлення про помилку -->
+          <div id="error-message" class="hidden">
+            Сталася помилка при відправці звернення. Спробуйте зв"язатися з нами за допомогою соціальних мереж чи телефону.
+          </div>
+        </div>
+        <div class="footer__item socials">
+          <h3 class="footer__item__title" data-translation="socialsTitle">
+            Месенджери та соціальні мережі
+          </h3>
+          <ul>
+            <li><a href="https://www.facebook.com/AnviZahid" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/anvizahid" target="_blank">Instagram</a></li>
+            <li><a href="viber://add?number=380676750868" target="_blank">Viber</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+    <script src="../js/language.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/products.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
