@@ -96,6 +96,11 @@ body {
       width: 155px;
   }
   
+  .header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
   
   .menu {
     display: flex; /* Задає блочне відображення для меню */
@@ -161,6 +166,17 @@ body {
     font-size: 18px;
     display: flex;
     align-items: center;
+  }
+
+  #languageSelect {
+    background-color: var(--primary-color);
+    color: var(--main-backgrounds-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   
 
