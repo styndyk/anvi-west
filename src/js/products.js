@@ -15,29 +15,42 @@ function showProducts(productsToShow, start, end) {
 
   // Проходження по списку товарів та створення блоків для кожного товару
   for (let i = start; i < end; i++) {
-    const product = productsToShow[i];
-    if(!product) break;
+    const productId = productsToShow[i].id; // Отримати ідентифікатор товару
+    const product = products.find(p => p.id === productId); // Знайти товар за ідентифікатором
+    
+    if (!product) break;
 
 
     const goodsProduct = document.createElement('div');
     goodsProduct.classList.add('goods__product');
 
+    // Вибір перекладу назви товару залежно від активної мови
+    const activeTranslations = translations[activeLanguage];
+    const translatedName = activeTranslations.products.find(p => p.id === productId).name;
+
+    // Вибір перекладів властивостей залежно від активної мови
+    const translatedProperties = activeTranslations.properties;
+
+    // Вибір значень властивостей залежно від активної мови
+    const translatedProductProperties = activeTranslations.products.find(p => p.id === productId).properties;
+
+
     // Заповнення блоку інформацією про товар
     goodsProduct.innerHTML = `
     <div class="goods__product__image">
-      <img src="${product.image}" alt="${product.name}">
+      <img src="${product.image}" alt="${translatedName}">
     </div>
     <h3 class="goods__product__title">
-      ${product.name}
+      ${translatedName}
     </h3>
     <div class="goods__product__properties">
-      ${product.properties.size ? `<p class="goods__product__size"><span class="goods__product__properties__name">Розмір</span> ${product.properties.size}</p>` : ''}
-      ${product.properties.color ? `<p class="goods__product__color"><span class="goods__product__properties__name">Колір</span> ${product.properties.color}</p>` : ''}
-      ${product.properties.footage ? `<p class="goods__product__footage"><span class="goods__product__properties__name">Метраж</span> ${product.properties.footage}</p>` : ''}
-      ${product.properties.fastening ? `<p class="goods__product__fastening"><span class="goods__product__properties__name">Кріплення</span> ${product.properties.fastening}</p>` : ''}
-      ${product.properties.quantityOfPack ? `<p class="goods__product__quantityOfPack"><span class="goods__product__properties__name">Кількість в упаковці</span> ${product.properties.quantityOfPack}</p>` : ''}
-      ${product.properties.quantityofBox ? `<p class="goods__product__quantityofBox"><span class="goods__product__properties__name">Кількість в ящику</span> ${product.properties.quantityofBox}</p>` : ''}
-      ${product.properties.producer ? `<p class="goods__product__producer"><span class="goods__product__properties__name">Виробник</span> ${product.properties.producer}</p>` : ''}
+        ${product.properties.size !== undefined && product.properties.size !== null && product.properties.size !== '' ? `<p class="goods__product__size"><span class="goods__product__properties__name">${translatedProperties.size}</span> ${translatedProductProperties.size}</p>` : ''}
+        ${product.properties.color !== undefined && product.properties.color !== null && product.properties.color !== '' ? `<p class="goods__product__color"><span class="goods__product__properties__name">${translatedProperties.color}</span> ${translatedProductProperties.color}</p>` : ''}
+        ${product.properties.footage !== undefined && product.properties.footage !== null && product.properties.footage !== '' ? `<p class="goods__product__footage"><span class="goods__product__properties__name">${translatedProperties.footage}</span> ${translatedProductProperties.footage}</p>` : ''}
+        ${product.properties.fastening !== undefined && product.properties.fastening !== null && product.properties.fastening !== '' ? `<p class="goods__product__fastening"><span class="goods__product__properties__name">${translatedProperties.fastening}</span> ${translatedProductProperties.fastening}</p>` : ''}
+        ${product.properties.quantityOfPack !== undefined && product.properties.quantityOfPack !== null && product.properties.quantityOfPack !== '' ? `<p class="goods__product__quantityOfPack"><span class="goods__product__properties__name">${translatedProperties.quantityOfPack}</span> ${translatedProductProperties.quantityOfPack}</p>` : ''}
+        ${product.properties.quantityofBox !== undefined && product.properties.quantityofBox !== null && product.properties.quantityofBox !== '' ? `<p class="goods__product__quantityofBox"><span class="goods__product__properties__name">${translatedProperties.quantityofBox}</span> ${translatedProductProperties.quantityofBox}</p>` : ''}
+        ${product.properties.producer !== undefined && product.properties.producer !== null && product.properties.producer !== '' ? `<p class="goods__product__producer"><span class="goods__product__properties__name">${translatedProperties.producer}</span> ${translatedProductProperties.producer}</p>` : ''}
     </div>
   `;
   
@@ -47,6 +60,7 @@ function showProducts(productsToShow, start, end) {
   }
 
   updatePagination();
+  setTranslations(); 
 }
 
 // Функція для оновлення пагінації

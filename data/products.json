@@ -559,7 +559,7 @@
     },
     {
       "id": 48,
-      "name": "Холофайбер",
+      "name": "Холлофайбер",
       "price": 0,
       "category": "siliconeBall",
       "image": "./images/products/холофайбер",
@@ -784,9 +784,9 @@
       "category": "siliconeBall",
       "image": "./images/products/синтепон.webp",
       "properties": {
-        "footage": ""
+        "footage": "20 м."
       },
-      "description": "20 м."  
+      "description": ""  
     },
     {
       "id": 69,
