@@ -1148,7 +1148,7 @@
       "image": "./images/products/stables380-38.jpg",
       "properties": {
         "size": "380/38",
-        "quantityofBox": "12 600 шт."
+        "quantityOfPack": "12 600 шт."
       },
       "description": ""  
     },

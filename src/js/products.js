@@ -3,6 +3,7 @@ const searchInput = document.getElementById('searchInput');
 const suggestionsList = document.getElementById('suggestionsList');
 let products = []; // Масив для зберігання всіх товарів
 let selectedCategories = []; // Масив для зберігання вибраних категорій
+let activeTranslations = translations[activeLanguage];
 
 const itemsPerPage = 20;
 let currentPage = 1;
@@ -25,7 +26,6 @@ function showProducts(productsToShow, start, end) {
     goodsProduct.classList.add('goods__product');
 
     // Вибір перекладу назви товару залежно від активної мови
-    const activeTranslations = translations[activeLanguage];
     const translatedName = activeTranslations.products.find(p => p.id === productId).name;
 
     // Вибір перекладів властивостей залежно від активної мови
@@ -92,7 +92,7 @@ function goToPage(pageNumber) {
 // Функція для фільтрації товарів за обраними категоріями та пошуковим запитом
 function filterProducts() {
   const searchText = searchInput.value.trim().toLowerCase();
-  const filteredProductsBySearch = products.filter(product => product.name.toLowerCase().includes(searchText));
+  const filteredProductsBySearch = products.filter(product => activeTranslations.products.find(p => p.id === product.id)?.name.toLowerCase().includes(searchText));
   let filteredProducts = filteredProductsBySearch; // Початково, вибираємо всі товари, які відповідають пошуковому запиту
 
   if (selectedCategories.length > 0) {
@@ -113,7 +113,7 @@ fetch('./data/products.json')
   .then(response => response.json())
   .then(data => {
     products = data; // Зберігаємо всі товари у змінну
-    updatePagination(); // Додайте цей рядок
+    updatePagination();
     showProducts(products, 0, itemsPerPage);  // При завантаженні сторінки відображаємо всі товари
 
     // Функція для відображення підказок
@@ -121,7 +121,7 @@ fetch('./data/products.json')
       const searchText = searchInput.value.trim().toLowerCase();
 
       // Фільтруємо товари за пошуковим запитом
-      const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchText));
+      const filteredProducts = products.filter(product => activeTranslations.products.find(p => p.id === product.id)?.name.toLowerCase().includes(searchText));
 
       // Показуємо або приховуємо підказки залежно від наявності результатів
       if (filteredProducts.length > 0) {
@@ -129,7 +129,9 @@ fetch('./data/products.json')
         filteredProducts.forEach(product => {
           const suggestion = document.createElement('div');
           suggestion.classList.add('suggestion');
-          suggestion.textContent = product.name;
+
+          const translatedName = activeTranslations.products.find(p => p.id === product.id)?.name || product.name;
+          suggestion.textContent = translatedName;
           suggestionsList.appendChild(suggestion);
         });
         suggestionsList.classList.add('active');
