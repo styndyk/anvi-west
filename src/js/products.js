@@ -81,11 +81,13 @@ function updatePagination() {
   }
 }
 
-function goToPage(pageNumber) {
+function goToPage(pageNumber, scrollToTop = false) {
   currentPage = pageNumber;
-  filterProducts(); // Перефільтровуємо товари
+  if (scrollToTop) {
   const productsList = document.getElementById('productsList');
   productsList.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Прокручуємо до початку контейнера із товарами
+  }
+  filterProducts(); // Перефільтровуємо товари
 }
 
 
@@ -175,9 +177,8 @@ function handleFilterChange(event) {
   } else {
     // Видалення вибраної категорії зі списку
     selectedCategories = selectedCategories.filter(category => category !== filterValue);
-  }
-  filterProducts(); // Перефільтруємо товари при зміні стану фільтра
-  goToPage(1); // Перехід на першу сторінку після зміни фільтрів
+  } 
+  goToPage(1, true); // Перехід на першу сторінку після зміни фільтрів
 }
 
 // Додаємо обробник подій для кожного input type="checkbox" фільтра
