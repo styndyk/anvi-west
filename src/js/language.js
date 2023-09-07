@@ -1686,14 +1686,14 @@ const russianTranslations = {
   },
   {
       id: 86,
-      name: "Завеса Большой К275",
+      name: "Завес Большой К275",
       properties: {
           size: "40x100 мм."
       }
   },
   {
       id: 87,
-      name: "Завеса Малый К274",
+      name: "Завес Малый К274",
       properties: {
           size: "40x40 мм."
       }

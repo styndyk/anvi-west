@@ -74,7 +74,7 @@ function updatePagination() {
   for (let i = 1; i <= totalPages; i++) {
     const pageButton = document.createElement('button');
     pageButton.textContent = i;
-    pageButton.addEventListener('click', () => goToPage(i));
+    pageButton.addEventListener('click', () => goToPage(i, true));
     paginationContainer.appendChild(pageButton);
 
     pageButton.classList.toggle('active', i === currentPage);
