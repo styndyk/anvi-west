@@ -65,7 +65,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/headerBg.jpg');
+  background-image: url('../images/backgrounds/5.jpg');
   background-position: center;
   background-size: cover;
   opacity: 0.75; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
@@ -158,7 +158,7 @@ body {
   }
 
   .menu__item.active .menu__item__link {
-    color: var(--active-color);
+    font-weight: bold;
   }
   
 
