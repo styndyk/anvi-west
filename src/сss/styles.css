@@ -918,20 +918,21 @@ body {
 
 /* Avaptive */
 
-/* iPhone 8, SE (2nd generation): orientation: portrait */
+/* Загальний адаптив починаючи від найменших екранів */
+@media screen and (min-width: 310px) and (orientation: portrait) {
 
-@media (min-width: 370px) and (max-width: 414px) and (orientation: portrait) {
+  /* Home page */
 
   .container {
-    max-width: 355px;
-    padding-left: 5px;
-    padding-right: 5px;
+    max-width: 300px;
+    padding: 0 5px;
   }
 
   .header-section {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
   .header-section::before {
@@ -946,23 +947,21 @@ body {
   .header .container {
     justify-content: center;
   }
-
+  
   .logo {
     display: none;
   }
 
   .header nav {
-    gap: 15px;
+    gap: 10px;
   }
 
   .menu {
     gap: 15px;
   }
 
-  
-
   .menu__item__link {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .contact-button {
@@ -970,51 +969,52 @@ body {
   }
 
   #languageSelect {
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px 10px;
   }
+
   .company-section {
     min-height: 70vh;
     max-height: 80vh;
   }
 
   .company-section .container {
-    max-width: 340px;
-    gap: 55px;
+    max-width: 280px;
+    gap: 25px;
   }
 
   .company-section h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .company-section p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .company-section__more {
     padding: 15px 30px;
-    font-size: 16px;
-    /* border-width: 1px; */
+    font-size: 14px;
+    border-width: 1px;
   }
 
 
   .products-title {
-    padding: 20px;
+    padding: 0;
   }
 
   .products-title__title {
-    font-size: 34px;
+    font-size: 28px;
+    line-height: 32px;
   }
 
   .products-title__text {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
-
   .products-section {
-    padding: 20px;
+    padding: 10px;
   }
 
   .products-section .container {
@@ -1023,12 +1023,12 @@ body {
 
   .products-section__block {
     width: calc(50% - 10px);
-    min-height: 200px;
+    min-height: 125px;
     margin-bottom: 0;
   }
 
   .products-section__content {
-    margin-top: 40%;
+    margin-top: 20%;
   }
 
   #products__foamRubber {
@@ -1042,18 +1042,18 @@ body {
   }
 
   #products__glues {
-    background-size: 75%;
+    background-size: 55%;
   }
 
   .products-section__content__title {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 14px;
   }
 
 
   .products-button {
     margin-top: 25px;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 
   .products-button__link {
@@ -1067,12 +1067,12 @@ body {
   }
   
   #map-frame {
-    height: 350px;
+    height: 300px;
   }
 
 
   .footer {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   .footer .container {
@@ -1083,16 +1083,16 @@ body {
   }
 
   .footer__item {
-    max-width: calc(100% - 25px);
+    max-width: calc(100% - 30px);
   }
 
   .footer__item__title {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .footer__item__info {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .footer__item__info address {
@@ -1128,23 +1128,25 @@ body {
   }
 
 
-/* AboutUs page*/
+  /* About Us page */
 
   .header-section__content .container {
-    max-width: 340px;
+    max-width: 290px;
     gap: 15px;
   }
 
   .header-section__content__title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .header-section__content__description {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
   }
 
-/*Products page*/
+
+  /* Products page*/
 
   .header-section.products-header::before {
     opacity: 0.5;
@@ -1152,15 +1154,15 @@ body {
 
   .titles {
     margin-bottom: 0;
-    height: 55vh;
+    height: 60vh;
   }
 
   .titles .container {
-    max-width: 340px;
+    max-width: 290px;
   }
 
   .titles__title {
-    font-size: 50px;
+    font-size: 32px;
   }
 
   .titles__text {
@@ -1216,23 +1218,34 @@ body {
   }
 
   .goods__product {
-    width: calc(90% - 5px);
-    min-height: 250px;
+    width: 125px;
+    height: 200px;
+    min-height: 200px;
     padding: 10px 10px;
   }
 
   .goods__product__image {
-    height: 65%;
-    margin-bottom: 15px;
+    height: 55%;
+    width: auto;
+    margin-bottom: 5px;
+  }
+
+  .goods__product__title {
+    font-size: 13px;
+    margin-bottom: 5px;
   }
 
   .goods__product__properties {
-    font-size: 14px;
+    font-size: 11px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 1;
+  }
+
+  .goods__product__properties p {
+    margin: 0 0 5px 0;
   }
   
   .goods__product__size,
@@ -1246,13 +1259,28 @@ body {
     display: block; /* Відображаємо характеристики з вмістом */
   }
 
-  .goods__product__title {
-    font-size: 14px;
-  }
+}
 
-  .goods__product__properties {
-    font-size: 12px;
-  }
+
+/* Galaxy S9+ / Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 369px) and (orientation: portrait) {
+  
+
+}
+
+/* iPhone 8, SE (2nd generation): orientation: portrait */
+
+@media (min-width: 370px) and (max-width: 414px) and (orientation: portrait) {
+
+ 
+
+/* AboutUs page*/
+
+  
+
+/*Products page*/
+
+  
 
 }
 
@@ -1261,14 +1289,7 @@ body {
 
 @media (min-width: 414px) and (orientation: portrait) {
 
-  .container {
-    max-width: 385px;
-    padding: 0 5px;
-  }
-
-  .products-section__content {
-    margin-top: 30%;
-  }
+ 
 
 }
 
