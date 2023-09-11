@@ -1184,12 +1184,9 @@ body {
     margin-top: 50px;
   }
 
-  .suggestions {
-    max-height: 250px;
-  }
-
   .suggestions.active {
     z-index: 2;
+    max-height: 250px;
   }
 
 
@@ -1366,16 +1363,39 @@ body {
 
 /* Ipone 8 plus orientarion:portrait */
 
-@media screen and (min-width: 375px) and (orientation: portrait) {
+@media screen and (min-width: 414px) and (orientation: portrait) {
 
- 
+  .container {
+    max-width: 385px;
+  }
 
-}
+  .company-section .container {
+    gap: 50px;
+  }
 
 
 /* About page*/
 
 /* Products page */
+
+  .goods__product {
+    height: 265px;
+    width: 150px;
+  }
+
+  .goods__product__properties__name {
+    margin-right: 15px;
+  }
+
+  .goods__product__quantityofBox,
+  .goods__product__quantityOfPack {
+    white-space: pre-line;
+  }
+}
+
+
+
+  
 
 /* iPhone 8, SE (2nd generation): orientation: landscape */
 
