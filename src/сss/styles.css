@@ -1124,7 +1124,7 @@ body {
   }
 
   .socials li a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
 
@@ -1195,6 +1195,7 @@ body {
 
   .goods__products {
     flex-direction: column;
+    align-items: center;
   }
 
   .goods__products__filters {
@@ -1219,7 +1220,7 @@ body {
 
   .goods__product {
     width: 125px;
-    height: 200px;
+    height: 240px;
     min-height: 200px;
     padding: 10px 10px;
   }
@@ -1259,13 +1260,60 @@ body {
     display: block; /* Відображаємо характеристики з вмістом */
   }
 
+  .pagination button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
 }
 
 
 /* Galaxy S9+ / Galaxy S8+ */
-@media (min-width: 320px) and (max-width: 369px) and (orientation: portrait) {
+@media screen and (min-width: 360px) and (orientation: portrait) {
+  .container {
+    max-width: 330px;
+  }
+
+  .company-section p {
+    line-height: 26px;
+  }
+
+  #products__glues {
+    background-size: 50%;
+  }
+
+
+  /* About Us page */
+
+  .header-section__content__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+
+  /*Products page */
+
   
 
+  .goods__products__list {
+    gap: 25px;
+  }
+
+  .goods__product {
+    width: 135px;
+  }
+
+  .goods__product__image {
+    height: 60%;
+  }
+
+  .goods__product__title {
+    font-size: 14px;
+  }
+
+  .goods__product__properties {
+    font-size: 12px;
+  }
 }
 
 /* iPhone 8, SE (2nd generation): orientation: portrait */
