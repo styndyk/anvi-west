@@ -1293,8 +1293,6 @@ body {
 
   /*Products page */
 
-  
-
   .goods__products__list {
     gap: 25px;
   }
@@ -1316,18 +1314,51 @@ body {
   }
 }
 
+
+
 /* iPhone 8, SE (2nd generation): orientation: portrait */
 
-@media (min-width: 370px) and (max-width: 414px) and (orientation: portrait) {
+@media screen and (min-width: 375px) and (orientation: portrait) {
 
- 
+  .container {
+      max-width: 345px;
+  }
+
+  .company-section .container {
+      max-width: 300px;
+      gap: 30px;
+  }
+
+  .company-section h1 {
+    font-size: 42px;
+  }
+
+  .products-title__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  #products__foamRubber {
+    background-color: rgba(192, 192, 192, .8);
+    background-blend-mode: hard-light;
+  }
+
+  .products-section__content {
+    margin-top: 10%;
+  }
 
 /* AboutUs page*/
 
-  
+  .header-section__content__title {
+    font-size: 32px;
+  }
 
 /*Products page*/
 
+.goods__product {
+  height: 260px;
+  width: 140px;
+}
   
 
 }
@@ -1335,7 +1366,7 @@ body {
 
 /* Ipone 8 plus orientarion:portrait */
 
-@media (min-width: 414px) and (orientation: portrait) {
+@media screen and (min-width: 375px) and (orientation: portrait) {
 
  
 
