@@ -3,14 +3,14 @@ const searchInput = document.getElementById('searchInput');
 const suggestionsList = document.getElementById('suggestionsList');
 let products = []; // Масив для зберігання всіх товарів
 let selectedCategories = []; // Масив для зберігання вибраних категорій
-let activeTranslations = translations[activeLanguage];
+window.activeTranslations = activeTranslations = translations[activeLanguage];
 
 const itemsPerPage = 20;
 let currentPage = 1;
 
 
 // Функція для відображення товарів на сторінці
-function showProducts(productsToShow, start, end) {
+window.showProducts = showProducts = function (productsToShow, start, end) {
   const productsList = document.getElementById('productsList');
   productsList.innerHTML = ''; // Очистити контейнер перед додаванням нових товарів
 
@@ -60,8 +60,7 @@ function showProducts(productsToShow, start, end) {
   }
 
   updatePagination();
-  setTranslations(); 
-}
+};
 
 // Функція для оновлення пагінації
 function updatePagination() {
@@ -92,7 +91,7 @@ function goToPage(pageNumber, scrollToTop = false) {
 
 
 // Функція для фільтрації товарів за обраними категоріями та пошуковим запитом
-function filterProducts() {
+window.filterProducts =  filterProducts = function () {
   const searchText = searchInput.value.trim().toLowerCase();
   const filteredProductsBySearch = products.filter(product => activeTranslations.products.find(p => p.id === product.id)?.name.toLowerCase().includes(searchText));
   let filteredProducts = filteredProductsBySearch; // Початково, вибираємо всі товари, які відповідають пошуковому запиту
@@ -239,3 +238,4 @@ searchInput.addEventListener('keydown', (event) => {
     filterProducts();
   })
   .catch(error => console.error('Помилка при завантаженні товарів:', error));
+

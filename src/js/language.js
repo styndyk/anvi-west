@@ -1959,12 +1959,12 @@ const russianTranslations = {
     
 };
 
-
 // 
-const translations = {
+window.translations = translations = {
     ukrainian: ukrainianTranslations,
     russian: russianTranslations
 };
+console.log(translations);
 
 // Елемент для вибору мови
 const languageSelect = document.getElementById("languageSelect");
@@ -1986,6 +1986,7 @@ function setTranslations() {
         element.textContent = translationText;
     }
   });
+
 }
 
 // Перевіряємо, чи вже збережена мова в localStorage
@@ -1999,25 +2000,40 @@ if (savedLanguage && translations[savedLanguage]) {
 }
 
 // Функція для зміни активної мови
+document.addEventListener("DOMContentLoaded", function () {
 function changeLanguage(newLanguage) {
     if (translations[newLanguage] && activeLanguage !== newLanguage) {
       activeLanguage = newLanguage;
-      setTranslations(); // Перевід текстів з нової активної мови
-      // Оновлюємо список товарів з новою мовою
-      filterProducts();
 
       // Зберігаємо обрану мову у localStorage
       localStorage.setItem("selectedLanguage", newLanguage);
+
+      activeTranslations = translations[newLanguage];
+      
+      setTranslations(); // Перевід текстів з нової активної мови
+      // Оновлюємо список товарів з новою мовою
+          if (typeof showProducts === "function") {
+            showProducts(products, 0, itemsPerPage);
+          }
+      
+          filterProducts();
+        
+      
+      
     }
 }
 
 
+    // Слухач події зміни мови
 
-// Слухач події зміни мови
-
-languageSelect.addEventListener("change", function () {
-  changeLanguage(languageSelect.value);
+        languageSelect.addEventListener("change", function () {
+        changeLanguage(languageSelect.value);
 });
+});
+
+
+
+
 
 // Виклик функції для встановлення перекладів
 setTranslations(); 
