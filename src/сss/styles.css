@@ -839,13 +839,12 @@ body {
 .pagination button {
   border: none;
   background-color: var(--primary-color);
-  /* border-color: var(--secondary-color); */
   color: var(--main-backgrounds-color);
   padding: 7px 12px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 2px;
-  margin: 0 7px;
+  margin: 0 10px;
   transition: transform 0.2s linear;
 }
 
@@ -2327,7 +2326,7 @@ body {
   }
 
   .products-section__block {
-    min-height: 300px;
+    min-height: 240px;
     margin-bottom: 35px;
   }
 
@@ -2340,7 +2339,7 @@ body {
   }
 
   #products__glues {
-    background-size: 55%;
+    background-size: 50%;
   }
 
   .products-button {
@@ -2350,6 +2349,10 @@ body {
   .products-button__link {
     padding: 10px 150px;
 
+  }
+
+  #map-frame {
+    height: 350px;
   }
 
   .contact-form {
@@ -2401,7 +2404,8 @@ body {
   }
     
   .goods__product__image {
-    height: 220px;
+    height: 200px;
+    width: 75%;
   }
 
   .goods__product__properties {
