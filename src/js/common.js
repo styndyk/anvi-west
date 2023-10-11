@@ -17,37 +17,40 @@
 
 
 // Відправка форми на серверну частину
+const form = document.getElementById('form');
 
-    const form = document.getElementById('form');
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Зупинити переадресацію на /send-email
 
-    form.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Зупинити переадресацію на /send-email
+    const formData = new FormData(form);
 
-        const formData = new FormData(form);
-        for (const pair of formData.entries()) {
-            console.log(pair[0], pair[1]);
+    // Створіть і налаштуйте об'єкт XHR
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', './src/html/send-email.php', true);
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+    // Обробник події для завершення запиту
+    xhr.onload = () => {
+        if (xhr.status === 200) {
+            const data = JSON.parse(xhr.responseText);
+
+            if (data.success) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Успіх!',
+                    text: data.message,
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Помилка!',
+                    text: data.message,
+                });
+            }
+            form.reset();
         }
+    };
 
-        const response = await fetch('/send-email', {
-            method: 'POST',
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            Swal.fire({
-            icon: 'success',
-            title: 'Успіх!',
-            text: data.message
-            });
-        } else {
-            Swal.fire({
-            icon: 'error',
-            title: 'Помилка!',
-            text: data.message
-            });
-        }
-
-        form.reset();
-        });
+    // Надіслати дані форми
+    xhr.send(formData);
+});

@@ -580,7 +580,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/ProductsBg');
+  background-image: url('../images/ProductsBg.jpg');
   background-position: center;
   background-size: cover;
   opacity: 0.6; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
@@ -884,7 +884,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/AboutUsBG4');
+  background-image: url('../images/AboutUsBG.jpg');
   background-position: center;
   background-size: cover;
   opacity: 0.6; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */

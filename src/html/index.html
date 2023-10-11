@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/png" href="../images/favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="../images/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="../images/favicon/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="../images/favicon/android-chrome-512x512.png" sizes="512x512">
-  <link rel="apple-touch-icon" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="src/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="src/images/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="src/images/favicon/android-chrome-512x512.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="src/images/favicon/apple-touch-icon.png">
   <meta charset="UTF-8">
   <title data-translation="homePagePageTitle">Анві-Захід</title>
-  <link rel="stylesheet" href="../сss/fonts.css">
-  <link rel="stylesheet" href="../сss/colors.css">
-  <link rel="stylesheet" href="../сss/styles.css">
+  <link rel="stylesheet" href="src/сss/fonts.css">
+  <link rel="stylesheet" href="src/сss/colors.css">
+  <link rel="stylesheet" href="src/сss/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -19,7 +19,7 @@
       <div class="container">
         <div class="logo">
           <a href="/" class="header__logo__link">
-            <img class="header__logo__link__img" src="../images/logo_Images/logo_ImgID3.png" alt="Логотип">
+            <img class="header__logo__link__img" src="src/images/logoImages/logo.png" alt="Анві-Захід">
           </a>
         </div>
         <nav>
@@ -151,7 +151,7 @@
         <h3 class="contact-form__title footer__item__title" data-translation="contactTitle">
           Зв'язатися з нами
         </h3>
-        <form  method="POST" id="form">
+        <form  action="send-email.php" method="POST" id="form" >
           <div class="form-row">
             <div class="form-group">
               <label for="name" data-translation="firstName">Ім'я: *</label>
@@ -205,9 +205,9 @@
       </div>
     </div>
   </footer>
-  <script src="../js/language.js" defer></script>
-  <script src="../js/common.js" defer></script>
-  <script src="../js/index.js" defer></script>
+  <script src="src/js/language.js" defer></script>
+  <script src="src/js/common.js" defer></script>
+  <script src="src/js/index.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
