@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $surname = $_POST["surname"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
-    $subject = $_POST["subject"];
+    $subjectLetter = $_POST["subject"];
     $message = $_POST["message"];
 
     // Налаштування параметрів листа
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Прізвище: $surname\n";
     $email_body .= "Електронна пошта: $email\n";
     $email_body .= "Номер телефону: $phone\n";
-    $email_body .= "Тема: $subject\n";
+    $email_body .= "Тема: $subjectLetter\n";
     $email_body .= "Повідомлення: $message\n";
 
     // Відправлення листа

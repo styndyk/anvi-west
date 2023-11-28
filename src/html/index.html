@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" data-translation="metaDescriptionHome" content="Ласкаво просимо до Анві-Захід – вашого надійного партнера в області меблевої фурнітури та комплектуючих до м'яких меблів. Звертайтеся до нас для придбання найкращих матеріалів та деталей для м'яких меблів." />
+  <meta name="keywords" data-translation="metaKeywordsHome" content="Анві-Захід, меблева фурнітура, комплектуючі до м'яких меблів, поролон, неткані матеріали, пружинний блок, поролоновий наповнювач" />
+  <title data-translation="homePagePageTitle">Анві-Захід - Ваш надійний партнер в області меблевої фурнітури та комплектуючих до м'яких меблів</title>
   <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="src/images/favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="src/images/favicon/android-chrome-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="src/images/favicon/android-chrome-512x512.png" sizes="512x512">
   <link rel="apple-touch-icon" href="src/images/favicon/apple-touch-icon.png">
-  <meta charset="UTF-8">
-  <title data-translation="homePagePageTitle">Анві-Захід</title>
+  <link rel="alternate" hreflang="uk" href="https://anvi-zahid.com.ua/" />
+  <link rel="alternate" hreflang="ru" href="https://anvi-zahid.com.ua/?lang=ru" />
   <link rel="stylesheet" href="src/сss/fonts.css">
   <link rel="stylesheet" href="src/сss/colors.css">
   <link rel="stylesheet" href="src/сss/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <section class="header-section">
@@ -19,7 +23,7 @@
       <div class="container">
         <div class="logo">
           <a href="/" class="header__logo__link">
-            <img class="header__logo__link__img" src="src/images/logoImages/logo.png" alt="Анві-Захід">
+            <img class="header__logo__link__img" src="src/images/logoImages/logo.svg" alt="Анві-Захід">
           </a>
         </div>
         <nav>
@@ -39,8 +43,8 @@
           </ul>
 
           <select id="languageSelect">
-            <option value="ukrainian">UA</option>
-            <option value="russian">RU</option>
+            <option value="uk">UA</option>
+            <option value="ru">RU</option>
           </select>
         </nav>
         
@@ -115,14 +119,14 @@
   </section>
   <section class="map">
     <div id="map-container">
-      <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.380279386556!2d24.220269684540114!3d50.390194488834084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4724d92b8275c99b%3A0x4a3a67c7eb182f5!2sAnvi-Zakhid!5e0!3m2!1sru!2sua!4v1688563643211!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe id="map-frame" title="Google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.380279386556!2d24.220269684540114!3d50.390194488834084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4724d92b8275c99b%3A0x4a3a67c7eb182f5!2sAnvi-Zakhid!5e0!3m2!1sru!2sua!4v1688563643211!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
   
   <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer__item contact-info">
-        <h3 class="footer__item__title" data-translation="locationTitle">Ми знаходимося</h3>
+        <h2 class="footer__item__title" data-translation="locationTitle">Ми знаходимося</h2>
         <div class="footer__item__info">
           <address data-translation="locationAddress">
               вулиця Бічна Промислова, 3, Червоноград, Львівська область, 80100
@@ -148,9 +152,9 @@
       </div>
 
       <div class="footer__item contact-form">
-        <h3 class="contact-form__title footer__item__title" data-translation="contactTitle">
+        <h2 class="contact-form__title footer__item__title" data-translation="contactTitle">
           Зв'язатися з нами
-        </h3>
+        </h2>
         <form  action="send-email.php" method="POST" id="form" >
           <div class="form-row">
             <div class="form-group">
@@ -182,21 +186,11 @@
           </div>
           <button type="submit" class="contact-form__button" id="send-button" data-translation="sendButton">Надіслати</button>
         </form>
-
-        <!-- Контейнер для повідомлення про успішну відправку -->
-        <div id="success-message" class="hidden">
-          Ваше звернення було успішно відправлене нашим менеджерам. Ми зв’яжемося із вами у найближчий час.
-        </div>
-
-        <!-- Контейнер для повідомлення про помилку -->
-        <div id="error-message" class="hidden">
-          Сталася помилка при відправці звернення. Спробуйте зв"язатися з нами за допомогою соціальних мереж чи телефону.
-        </div>
       </div>
       <div class="footer__item socials">
-        <h3 class="footer__item__title" data-translation="socialsTitle">
+        <h2 class="footer__item__title" data-translation="socialsTitle">
           Месенджери та соціальні мережі
-        </h3>
+        </h2>
         <ul>
           <li><a href="https://www.facebook.com/AnviZahid" target="_blank">Facebook</a></li>
           <li><a href="https://www.instagram.com/anvizahid" target="_blank">Instagram</a></li>
@@ -207,7 +201,6 @@
   </footer>
   <script src="src/js/language.js" defer></script>
   <script src="src/js/common.js" defer></script>
-  <script src="src/js/index.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js" defer></script>
 </body>
 </html>

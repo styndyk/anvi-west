@@ -1,5 +1,12 @@
 // Об'єкти з перекладами та інший код для перекладу
 const ukrainianTranslations = {
+    lang: 'uk',
+    metaDescriptionHome: "Ласкаво просимо до Анві-Захід – вашого надійного партнера в галузі меблевої фурнітури та комплектуючих до м'яких меблів. Зв'яжіться з нами для придбання найкращих матеріалів та деталей для м'яких меблів.",
+    metaKeywordsHome: "Анві-Захід, меблева фурнітура, комплектуючі до м'яких меблів, поролон, неткані матеріали, пружинний блок, поролоновий наповнювач",
+    metaDescriptionAboutUs: "Про компанію Анві-Захід. Ласкаво просимо до гуртівні 'Анві-Захід' – вашого надійного партнера в області меблевої фурнітури та комплектуючих до м'яких меблів. Ми є провідним постачальником якісних та стильних матеріалів для меблевого виробництва.",
+    metaKeywordsAboutUs: "Анві-Захід, про компанію 'Анві-Захід', меблева фурнітура, комплектуючі до м'яких меблів, матеріали для меблевого виробництва, надійний партнер",
+    metaDescriptionProducts: "Розгляньте великий асортимент товарів від компанії 'Анві-Захід.' На цій сторінці представлені різні види товарів, які ми пропонуємо. Знаходьте необхідні матеріали, комплектуючі та аксесуари.",
+    metaKeywordsProducts: "Товари, асортимент товарів, матеріали, поролон, тканини, неткані матеріали, пружини, пружинний блок, синтепон, холофайбер, ламелі, ДВП листи, зачепи, ніжки, механізми",
     homeMenu: 'Головна сторінка',
     aboutUsMenu: 'Про нас',
     productsMenu: 'Товари',
@@ -32,11 +39,11 @@ const ukrainianTranslations = {
     facebook: "Facebook",
     instagram: "Instagram",
     viber: "Viber",
-    homePagePageTitle: "Анві-Захід",
+    homePagePageTitle: "Анві-Захід - Ваш надійний партнер в області меблевої фурнітури та комплектуючих до м'яких меблів",
     homePageDescription: "Ласкаво просимо до гуртівні 'Анві-Захід' – вашого надійного партнера в області меблевої фурнітури та комплектуючих до м'яких меблів ",
     aboutUsPageTitle: "Про компанію Анві-Захід",
     aboutUsPagedescription: "Ласкаво просимо до гуртівні 'Анві-Захід' – вашого надійного партнера в області меблевої фурнітури та комплектуючих до м'яких меблів. Ми є провідним постачальником якісних та стильних матеріалів для меблевого виробництва. Наша команда пропонує широкий асортимент продукції за конкурентними цінами, щоб задовольнити потреби кожного клієнта. З нами ви отримуєте професійну підтримку, оперативні поставки та надійного партнера для успішного розвитку вашого бізнесу. Разом з 'Анві-Захід' втілюйте найкращі ідеї та створюйте неперевершені меблі для вашого внутрішнього простору.",
-    productsPagePageTitle: "Товари - Анві-Захід",
+    productsPagePageTitle: "Асортимент товарів компанії Анві-Захід",
     productsPagetitle: "Товари",
     productsPagedescription: "Представлені всі види товарів",
     productsPagefiltersFoamRubber: "Поролон",
@@ -1002,6 +1009,13 @@ const ukrainianTranslations = {
 
 
 const russianTranslations = {
+    lang: 'ru',
+    metaDescriptionHome: "Добро пожаловать в Анві-Захід – вашего надежного партнера в области мебельной фурнитуры и комплектующих к мягкой мебели. Свяжитесь с нами для приобретения лучших материалов и деталей мягкой мебели.",
+    metaKeywordsHome: "Анві-Захід, мебельная фурнитура, комплектующие к мягкой мебели, поролон, нетканые материалы, пружинный блок, поролоновый наполнитель",
+    metaDescriptionAboutUs: "О компании Анві-Захід. Добро пожаловать в 'Анві-Захід' – вашего надежного партнера в области мебельной фурнитуры и комплектующих к мягкой мебели. Мы являемся ведущим поставщиком качественных и стильных материалов для мебельного производства.",
+    metaKeywordsAboutUs: "Анві-Захід, мебельная фурнитура, комплектующие к мягкой мебели, материалы для мебельного производства, надежный партнер",
+    metaDescriptionProducts: "Рассмотрите большой ассортимент товаров от компании 'Анві-Захід.' На этой странице представлены все виды товаров, которые мы предлагаем. Находите необходимые материалы, комплектующие и аксессуары.",
+    metaKeywordsProducts: "Товары, ассортимент товаров, материалы, поролон, ткани, нетканые материалы, пружины, пружинный блок, синтепон, холофайбер, ламели, ДВП листы, зацепы, ножки, механизмы",
     homeMenu: 'Главная страница',
     aboutUsMenu: 'О нас',
     productsMenu: 'Товары',
@@ -1034,11 +1048,11 @@ const russianTranslations = {
     facebook: "Facebook",
     instagram: "Instagram",
     viber: "Viber",
-    homePagePageTitle: "Анви-Захид",
+    homePagePageTitle: "Анві-Захід - Ваш надежный партнер в области мебельной фурнитуры и комплектующих к мягкой мебели",
     homePageDescription: "Добро пожаловать в 'Анві-Захід' – вашего надежного партнера в области мебельной фурнитуры и комплектующих к мягкой мебели.",
     aboutUsPageTitle :"О компании Анві-Захід",
     aboutUsPagedescription: "Добро пожаловать в 'Анві-Захід' – вашего надежного партнера в области мебельной фурнитуры и комплектующих к мягкой мебели. Мы являемся ведущим поставщиком качественных и стильных материалов для мебельного производства. Наша команда предлагает широкий ассортимент продукции по конкурентоспособным ценам, чтобы удовлетворить потребности каждого клиента. С нами вы получаете профессиональную поддержку, оперативные поставки и надежного партнера для успешного развития вашего бизнеса. Вместе с  'Анви-Захид' воплощайте лучшие идеи и создавайте непревзойденную мебель для вашего внутреннего пространства.",
-    productsPagePageTitle: "Товары - Анві-Захід",
+    productsPagePageTitle: "Ассортимент товаров компании Анві-Захід",
     productsPagetitle: "Товары",
     productsPagedescription: "Представлены все виды товаров",
     productsPagefiltersFoamRubber: "Поролон",
@@ -2003,17 +2017,28 @@ const russianTranslations = {
 
 // 
 window.translations = translations = {
-    ukrainian: ukrainianTranslations,
-    russian: russianTranslations
+    uk: ukrainianTranslations,
+    ru: russianTranslations
 };
-console.log(translations);
 
 // Елемент для вибору мови
 const languageSelect = document.getElementById("languageSelect");
 
 
 // Функція для встановлення перекладів
-let activeLanguage = "ukrainian"; // Встановіть активну мову тут
+let activeLanguage = document.documentElement.lang;
+
+
+let currentURL = window.location.href;
+
+// Функція для отримання значення параметра lang з URL
+function getLanguageFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('lang');
+}
+
+// Отримуємо мову з URL
+const languageFromURL = getLanguageFromURL();
 
 
 function setTranslations() {
@@ -2024,6 +2049,12 @@ function setTranslations() {
     const translationText = translations[activeLanguage][translationKey];
     if (element.tagName === "INPUT" && element.hasAttribute("placeholder")) {
         element.placeholder = translationText;
+    } else if (
+        element.tagName === "META" &&
+        (element.getAttribute("name") === "description" ||
+        element.getAttribute("name") === "keywords")
+    ) {
+        element.content = translationText;
     } else {
         element.textContent = translationText;
     }
@@ -2039,12 +2070,24 @@ if (savedLanguage && translations[savedLanguage]) {
 
     // Змінюємо вибране значення у елементі <select>
     languageSelect.value = activeLanguage;
+    
+    //Зміна параметра lang
+    document.documentElement.lang = translations[activeLanguage].lang;
+    
+    // Видаляємо всі попередні параметри `lang`
+    const cleanedURL = currentURL.replace(/(\?lang=uk|\?lang=ru)/g, "");
+
+    // Додаємо новий параметр `lang`
+    const newURL = cleanedURL + (cleanedURL.includes("?") ? "&" : "?") + `lang=${translations[activeLanguage].lang}`;
+    window.history.replaceState({}, "", newURL);
+    
+    
 }
 
 // Функція для зміни активної мови
-document.addEventListener("DOMContentLoaded", function () {
 function changeLanguage(newLanguage) {
     if (translations[newLanguage] && activeLanguage !== newLanguage) {
+      languageSelect.value = newLanguage;
       activeLanguage = newLanguage;
 
       // Зберігаємо обрану мову у localStorage
@@ -2052,30 +2095,48 @@ function changeLanguage(newLanguage) {
 
       activeTranslations = translations[newLanguage];
       
-      setTranslations(); // Перевід текстів з нової активної мови
-      // Оновлюємо список товарів з новою мовою
-          if (typeof showProducts === "function") {
+      //Зміна параметра lang
+      document.documentElement.lang = translations[newLanguage].lang;
+      
+      // Змінюємо URL-параметр `lang` за допомогою ключового слова
+        currentURL = window.location.href;
+
+      let newURL = currentURL;
+
+      // Видаляємо всі параметри `lang`
+      newURL = newURL.replace(/(\?lang=uk|\?lang=ru|&lang=uk|&lang=ru)/g, "");
+
+      // Додаємо новий параметр `lang`
+      newURL = newURL + (newURL.includes("?") ? "&" : "?") + `lang=${translations[newLanguage].lang}`;
+
+      window.history.replaceState({}, "", newURL);
+      
+      if (currentURL !== newURL) {
+        setTranslations(); // Перевід текстів з нової активної мови
+        // Оновлюємо список товарів з новою мовою
+        if (typeof showProducts === "function") {
             showProducts(products, 0, itemsPerPage);
-          }
-      
-          filterProducts();
-        
-      
-      
+            filterProducts();
+        }
+      }
     }
 }
 
+// Якщо параметр lang знайдений у URL та він відповідає підтримуваним мовам (uk або ru), змінюємо мову
+if (languageFromURL && (languageFromURL === 'uk' || languageFromURL === 'ru')) {
+    // Оновлюємо збережену мову в localStorage відповідно до параметру URL
+    localStorage.setItem("selectedLanguage", languageFromURL);
+    changeLanguage(languageFromURL);
+} else if (!currentURL.includes("lang=")) {
+    // Якщо параметр lang не знайдений у URL і не збережена мова, додати параметр lang до URL зі значенням з тегу <html>
+    const newURL = currentURL + (currentURL.includes("?") ? "&" : "?") + `lang=${activeLanguage}`;
+    window.history.replaceState({}, "", newURL);
+}
 
-    // Слухач події зміни мови
-
-        languageSelect.addEventListener("change", function () {
-        changeLanguage(languageSelect.value);
+// Слухач події зміни мови
+languageSelect.addEventListener("change", function () {
+    changeLanguage(languageSelect.value);
 });
-});
-
-
-
-
 
 // Виклик функції для встановлення перекладів
 setTranslations(); 

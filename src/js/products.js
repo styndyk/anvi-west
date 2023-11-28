@@ -110,7 +110,7 @@ window.filterProducts =  filterProducts = function () {
 
 
 // Завантажуємо список товарів з файлу products.json
-fetch('./getProducts.php')
+fetch('./data/products.json')
   .then(response => response.json())
   .then(data => {
     products = data; // Зберігаємо всі товари у змінну

@@ -1,4 +1,3 @@
-
 /* Загальні стилі */
 
 html {
@@ -16,7 +15,7 @@ body {
   a {
     color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
-    text-decoration: none; /* Відключає підкреслення посилань */
+    text-decoration: none;
   }
 
   p {
@@ -35,18 +34,18 @@ body {
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'RobotoSlab-Bold', serif;
-    font-weight: bold; /* Задає жирний шрифт для заголовків */
-    margin-top: 0; /* Видаляє верхній відступ заголовків */
-    margin-bottom: 1rem; /* Додає нижній відступ для заголовків */
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
     color: var(--primary-color);
   }
 
   .container {
-    max-width: 1500px; /* Задає максимальну ширину контейнера */
-    margin-left: auto; /* Автоматично вирівнює контейнер по лівому краю */
-    margin-right: auto; /* Автоматично вирівнює контейнер по правому краю */
-    padding-left: 10px; /* Задає внутрішній відступ зліва контейнера */
-    padding-right: 10px; /* Задає внутрішній відступ справа контейнера */
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* END Загалальні стилі */
@@ -65,24 +64,24 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/backgrounds/8.jpg');
+  background-image: url('../images/backgrounds/homeBg.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.75; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
+  opacity: 0.75;
   z-index: -1;
 }
   
 
 
 .header {
-    padding: 20px; /* Задає відступи всередині хедера */
+    padding: 20px;
     margin-bottom: 15px;
 }
 
 .header .container {
-    display: flex; /* Задає блочне відображення для елементів хедера */
-    align-items: center; /* Вирівнює елементи хедера по вертикалі */
-    justify-content: space-between; /* Розташовує елементи хедера на краях */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-height: 100px;
   }
 
@@ -103,8 +102,8 @@ body {
   }
   
   .menu {
-    display: flex; /* Задає блочне відображення для меню */
-    list-style-type: none; /* Видаляє маркування у списку меню */
+    display: flex;
+    list-style-type: none;
     align-items: center;
     padding: 0;
     gap: 45px;
@@ -194,7 +193,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40vh; /* Задайте висоту за потребою */
+    min-height: 40vh;
     max-height: 75vh;
   }
   
@@ -210,12 +209,12 @@ body {
   }
   
   .company-section h1 {
-    font-size: 64px; /* Задайте розмір шрифту за потребою */
+    font-size: 64px;
     
   }
   
   .company-section p {
-    font-size: 24px; /* Задайте розмір шрифту за потребою */
+    font-size: 24px;
     line-height: 38px;
   }
 
@@ -283,8 +282,6 @@ body {
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.1);
     background-blend-mode: multiply;
-    /* background-position-x: center ;
-    background-position-y: bottom ; */
     background-size: cover;
   }
 
@@ -331,7 +328,7 @@ body {
     background-position-x: center;
   }
 
-  .products-section__block:hover {/**/
+  .products-section__block:hover {
     transform: scale(1.1);
   }
   
@@ -402,7 +399,6 @@ body {
   .footer .container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     gap: 5vw;
   }
 
@@ -452,8 +448,6 @@ body {
   .form-group {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
-    /* width: calc(50% - 15px); */
     width: 50%;
     margin-bottom: 15px;
     position: relative;
@@ -487,16 +481,12 @@ body {
   .form-group textarea {
     flex-basis: 70%;
     border: none;
-    /* border-bottom: 1px solid var(--primary-color); */
-    /* min-height: 100%; */
     padding-bottom: 5px;
   }
 
   .form-group input:focus,
   .form-group textarea:focus {
     outline: none;
-    /* border-color: var(--primary-color); */
-    /* box-shadow: 0 0 2px var(--primary-color); */
 }
 
   .form-group textarea {
@@ -580,10 +570,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/ProductsBg.jpg');
+  background-image: url('../images/backgrounds/productsBg.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.6; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
+  opacity: 0.6;
   z-index: -1;
 }
 
@@ -626,7 +616,7 @@ body {
 .goods__search {
   display: flex;
   justify-content: center;
-  align-items: center; /* Додаємо вирівнювання по вертикалі */
+  align-items: center;
   flex-direction: column;
   padding: 35px 0;
   position: relative;
@@ -636,7 +626,7 @@ body {
   width: 70%;
   text-align: left;
   padding: 10px;
-  box-sizing: border-box; /* Запобігає зміні розміру інпута при виборі з підказки */
+  box-sizing: border-box;
   margin-bottom: 20px;
 }
 
@@ -651,31 +641,30 @@ body {
 
 .suggestions__container {
   position: relative;
-  width: 70%; /* Задайте бажану ширину контейнера .suggestions */
-  margin-top: 30px; /* Встановіть бажаний відступ від інпуту внизу */
-  /* max-height: 500px; */
+  width: 70%;
+  margin-top: 30px;
 }
 
 .suggestions {
   position: absolute;
   width: 100%;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий контейнер */
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* Тінь для контейнера */
-  border-radius: 5px; /* Закруглені кути контейнера */
-  padding: 5px 10px; /* Відступи всередині контейнера */
-  top: -45px; /* Відступ від інпута */
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 5px 10px;
+  top: -45px;
   left: 0;
   opacity: 0;
-  pointer-events: none; /* Забороняємо взаємодію з невидимим блоком */
+  pointer-events: none;
   transition: opacity 0.2s ease;
 }
 
 .suggestions.active {
-  display: flex; /* Змінюємо display на flex, щоб використовувати Flexbox */
-  flex-direction: column; /* Дозволяємо підказці переносити елементи на наступний рядок, якщо не вистачає місця */
-  justify-content: flex-start; /* Вирівнюємо елементи підказки по лівому краю */
-  align-items: flex-start; /* Вирівнюємо елементи по вертикалі по центру */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   opacity: 1;
   pointer-events: auto;
   overflow-y: scroll;
@@ -688,7 +677,7 @@ body {
 }
 
 .suggestion {
-  cursor: pointer; /* Змінює вигляд курсору при наведенні на елемент підказки */
+  cursor: pointer;
   padding: 10px 5px;
   box-sizing: border-box;
   width: 100%;
@@ -782,8 +771,8 @@ body {
 
 .goods__product__image {
   display: flex;
-  justify-content: center; /* Центрування по горизонталі */
-  align-items: center; /* Центруван`ня по вертикалі */
+  justify-content: center;
+  align-items: center;
   height: 60%;
   width: 90%;
   margin-bottom: 15px;
@@ -808,17 +797,16 @@ body {
 .goods__product__color,
 .goods__product__footage,
 .goods__product__fastening {
-  display: none; /* Приховуємо порожні характеристики */
+  display: none;
 }
 
 .goods__product__properties p:not(:empty) {
-  display: block; /* Відображаємо характеристики з вмістом */
+  display: block;
 }
 
 
 .goods__product__title {
   font-size: 18px;
-  /* margin-top: 10px; */
 }
 
 .goods__product__properties {
@@ -884,10 +872,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/AboutUsBG.jpg');
+  background-image: url('../images/backgrounds/aboutUsBg.jpg');
   background-position: center;
   background-size: cover;
-  opacity: 0.6; /* Значення від 0 до 1, де 0 - повна прозорість, 1 - повна непрозорість */
+  opacity: 0.6;
   z-index: -1;
 }
 
@@ -1249,11 +1237,11 @@ body {
   .goods__product__color,
   .goods__product__footage,
   .goods__product__fastening {
-    display: none; /* Приховуємо порожні характеристики */
+    display: none;
   }
   
   .goods__product__properties p:not(:empty) {
-    display: block; /* Відображаємо характеристики з вмістом */
+    display: block;
   }
 
   .pagination button {
@@ -1686,11 +1674,11 @@ body {
     .goods__product__color,
     .goods__product__footage,
     .goods__product__fastening {
-      display: none; /* Приховуємо порожні характеристики */
+      display: none;
     }
     
     .goods__product__properties p:not(:empty) {
-      display: block; /* Відображаємо характеристики з вмістом */
+      display: block;
     }
 
     .goods__product__title {
@@ -2026,12 +2014,12 @@ body {
   .goods__product__color,
   .goods__product__footage,
   .goods__product__fastening {
-    display: none; /* Приховуємо порожні характеристики */
+    display: none;
     margin-bottom: 0;
   }
   
   .goods__product__properties p:not(:empty) {
-    display: block; /* Відображаємо характеристики з вмістом */
+    display: block;
   }
 
   .goods__product__title {
@@ -2241,12 +2229,12 @@ body {
   .goods__product__color,
   .goods__product__footage,
   .goods__product__fastening {
-      display: none; /* Приховуємо порожні характеристики */
+      display: none;
       margin-bottom: 0;
   }
     
   .goods__product__properties p:not(:empty) {
-      display: block; /* Відображаємо характеристики з вмістом */
+      display: block;
   }
   
   .goods__product__title {
@@ -2421,12 +2409,12 @@ body {
   .goods__product__color,
   .goods__product__footage,
   .goods__product__fastening {
-    display: none; /* Приховуємо порожні характеристики */
+    display: none;
     margin-bottom: 0;
   }
   
   .goods__product__properties p:not(:empty) {
-    display: block; /* Відображаємо характеристики з вмістом */
+    display: block;
   }
 
   .goods__product__title {

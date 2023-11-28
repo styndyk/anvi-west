@@ -26,7 +26,7 @@ form.addEventListener('submit', (event) => {
 
     // Створіть і налаштуйте об'єкт XHR
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', './src/html/send-email.php', true);
+    xhr.open('POST', 'src/html/send-email.php', true);
     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 
     // Обробник події для завершення запиту
